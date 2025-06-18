@@ -10,7 +10,7 @@ export default function AWSExamApp() {
   const [gameState, setGameState] = useState('start'); // start, exam, results
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(4);
+  const [timeLeft, setTimeLeft] = useState(EXAM_DURATION);
   const [questionBank, setquestionBank] = useState([]);
   const [score, setScore] = useState(0);
 
@@ -31,22 +31,22 @@ export default function AWSExamApp() {
   };
 
 
-  // Timer
-  // useEffect(() => {
-  //   if (gameState === 'exam' && timeLeft > 0) {
-  //     const timer = setInterval(() => {
-  //       setTimeLeft(prev => {
-  //         if (prev <= 1) {
-  //           // Temps écoulé, soumettre automatiquement
-  //           submitExam();
-  //           return 0;
-  //         }
-  //         return prev - 1;
-  //       });
-  //     }, 1000);
-  //     return () => clearInterval(timer);
-  //   }
-  // }, [gameState, timeLeft ]);
+  //Timer
+  useEffect(() => {
+    if (gameState === 'exam' && timeLeft > 0) {
+      const timer = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            // Temps écoulé, soumettre automatiquement
+            submitExam();
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+      return () => clearInterval(timer);
+    }
+  }, [gameState, timeLeft ]);
 
   // Formater le temps
   const formatTime = (seconds) => {
