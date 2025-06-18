@@ -10,7 +10,7 @@ export default function AWSExamApp() {
   const [gameState, setGameState] = useState('start'); // start, exam, results
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [timeLeft, setTimeLeft] = useState(EXAM_DURATION);
+  const [timeLeft, setTimeLeft] = useState(4);
   const [questionBank, setquestionBank] = useState([]);
   const [score, setScore] = useState(0);
 
@@ -32,21 +32,21 @@ export default function AWSExamApp() {
 
 
   // Timer
-  useEffect(() => {
-    if (gameState === 'exam' && timeLeft > 0) {
-      const timer = setInterval(() => {
-        setTimeLeft(prev => {
-          if (prev <= 1) {
-            // Temps écoulé, soumettre automatiquement
-            submitExam();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-      return () => clearInterval(timer);
-    }
-  }, [gameState, timeLeft]);
+  // useEffect(() => {
+  //   if (gameState === 'exam' && timeLeft > 0) {
+  //     const timer = setInterval(() => {
+  //       setTimeLeft(prev => {
+  //         if (prev <= 1) {
+  //           // Temps écoulé, soumettre automatiquement
+  //           submitExam();
+  //           return 0;
+  //         }
+  //         return prev - 1;
+  //       });
+  //     }, 1000);
+  //     return () => clearInterval(timer);
+  //   }
+  // }, [gameState, timeLeft ]);
 
   // Formater le temps
   const formatTime = (seconds) => {
@@ -295,20 +295,30 @@ export default function AWSExamApp() {
           <div className="bg-white rounded-xl shadow-lg p-4 sticky top-6">
             <h3 className="font-semibold text-gray-800 mb-4">Navigation</h3>
             <div className="grid grid-cols-5 gap-2 mb-4">
-              {questionBank.map((_, index) => (
+              {questionBank.map((_ ,index)=>{
+                const correct = questionBank[index]?.correct || [];
+                const selected = selectedAnswers[questionBank[index]?.id] || []
+                // console.log({"correct": correct} , {"selected" :selected})
+                const red = correct.length > 0 && selected.length > 0 && !correct.every(ans => selected.includes(ans));
+                console.log({"red": red})
+                // const checked = false
+                return (
+
                 <button
                   key={index}
                   onClick={() => goToQuestion(index)}
                   className={`w-10 h-10 rounded-lg text-sm font-medium transition-all ${index === currentQuestion
                     ? 'bg-blue-600 text-white shadow-lg'
-                    : selectedAnswers[questionBank[index]?.id] !== undefined
-                      ? 'bg-green-100 text-green-700 hover:bg-green-200'
-                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    : selectedAnswers[questionBank[index]?.id] !== undefined && !red
+                      ? `  ' bg-green-100 text-green-700 hover:bg-green-200 ' `
+                      : `${!red ? 'bg-gray-100 text-gray-700 hover:bg-gray-200' : 'bg-red-100 text-red-700 hover:bg-red-200'}
+                      `
                     }`}
                 >
                   {index + 1}
                 </button>
-              ))}
+              )
+              })}
             </div>
 
             <div className="space-y-2 text-sm">
