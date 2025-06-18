@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Clock, CheckCircle, XCircle, RotateCcw, Trophy, AlertCircle } from 'lucide-react';
-import { examQuestions } from '../data/examQuestions2';
+import { examQuestions } from '../data/examQuestions3';
 
 const EXAM_DURATION = 120 * 60; // 2 heures en secondes
 const TOTAL_QUESTIONS = 65;
@@ -57,11 +57,43 @@ export default function AWSExamApp() {
   };
 
   // Sélectionner une réponse
-  const selectAnswer = (questionId, answerIndex) => {
+  /*const selectAnswer = (questionId, answerIndex) => {
     setSelectedAnswers(prev => ({
       ...prev,
       [questionId]: answerIndex
     }));
+  };*/
+  // Sélectionner une réponse (supporte plusieurs réponses)
+  const selectAnswer = (questionId, answerIndex) => {
+    const question = questionBank.find(q => q.id === questionId);
+    const maxAnswers = question.maxAnswers || 1; // Par défaut 1
+
+    setSelectedAnswers(prev => {
+      const current = prev[questionId] || [];
+      // Si la question n'autorise qu'une seule réponse
+      if (maxAnswers === 1) {
+        return {
+          ...prev,
+          [questionId]: [answerIndex]
+        };
+      }
+      // Si déjà sélectionné, on retire
+      if (current.includes(answerIndex)) {
+        return {
+          ...prev,
+          [questionId]: current.filter(idx => idx !== answerIndex)
+        };
+      }
+      // Si pas encore atteint la limite, on ajoute
+      if (current.length < maxAnswers) {
+        return {
+          ...prev,
+          [questionId]: [...current, answerIndex]
+        };
+      }
+      // Si limite atteinte, on ignore ou on remplace le plus ancien (optionnel)
+      return prev;
+    });
   };
 
   // Navigation
@@ -85,7 +117,18 @@ export default function AWSExamApp() {
   const submitExam = () => {
     let correctAnswers = 0;
     questionBank.forEach(question => {
-      if (selectedAnswers[question.id] === question.correct) {
+      /*if (selectedAnswers[question.id] === question.correct) {
+        correctAnswers++;
+      }*/
+      const selected = selectedAnswers[question.id] || [];
+      const correct = question.correct || [];
+
+      if (
+        Array.isArray(correct) &&
+        Array.isArray(selected) &&
+        correct.length === selected.length &&
+        correct.every(ans => selected.includes(ans))
+      ) {
         correctAnswers++;
       }
     });
@@ -313,7 +356,8 @@ export default function AWSExamApp() {
                 </div>
 
                 <div className="space-y-4 mb-8">
-                  {currentQ.options.map((option, index) => (
+
+                  {/* {currentQ.options.map((option, index) => (
                     <button
                       key={index}
                       onClick={() => selectAnswer(currentQ.id, index)}
@@ -336,7 +380,38 @@ export default function AWSExamApp() {
                         </span>
                       </div>
                     </button>
-                  ))}
+                    // ...existing code...
+
+                  ))} */}
+                  {currentQ.options.map((option, index) => {
+                    const isSelected = (selectedAnswers[currentQ.id] || []).includes(index);
+
+                    return (
+                      <button
+                        key={index}
+                        onClick={() => selectAnswer(currentQ.id, index)}
+                        className={`w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ${isSelected
+                            ? 'border-blue-500 bg-blue-50 text-blue-800'
+                            : 'border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100'
+                          }`}
+                      >
+                        <div className="flex items-center space-x-3">
+                          <div
+                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${isSelected ? 'border-blue-500 bg-blue-500' : 'border-gray-300'
+                              }`}
+                          >
+                            {isSelected && (
+                              <div className="w-2 h-2 bg-white rounded-full"></div>
+                            )}
+                          </div>
+                          <span className="font-medium">
+                            {String.fromCharCode(65 + index)}. {option}
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
+
                 </div>
 
                 <div className="flex justify-between">
