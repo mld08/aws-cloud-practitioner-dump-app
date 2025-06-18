@@ -105,7 +105,7 @@ export const examQuestions = [
       "AWS Billing Conductor",
       "Amazon CodeGuru",
       "Amazon SageMaker", 
-      "Optimiseur de calcul AWS"
+      "AWS Calcul Optimizer"
     ],
     "correct": [
       0, 4
@@ -347,7 +347,7 @@ export const examQuestions = [
     "question": "Une entreprise possède un compte AWS. Elle souhaite auditer ses mots de passe et accéder aux informations de rotation des clés à des fins de conformité. Quel service ou outil AWS répondra à cette exigence ?",
     "options": [
       "IAM Access Analyzer",
-      "Artefact AWS",
+      "AWS Artefact",
       "IAM Credential Report",
       "AWS Audit Manager"
     ],
@@ -361,9 +361,10 @@ export const examQuestions = [
     "question": "Une entreprise souhaite recevoir une notification lorsqu'un seuil de coût AWS spécifique est atteint. Quels services ou outils AWS peut-elle utiliser pour répondre à cette exigence ? (Choisissez deux réponses.)",
     "options": [
       "Amazon Simple Queue Service (Amazon SQS)",
-      "Budgets AWS",
-      "Explorateur de coûts",
-      "Amazon CloudWatch E. Rapport sur les coûts et l'utilisation d'AWS"
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "Amazon CloudWatch",
+      "Rapport sur les coûts et l'utilisation d'AWS"
     ],
     "correct": [
       1,
@@ -376,7 +377,7 @@ export const examQuestions = [
     "id": 27,
     "question": "Quel service ou ressource AWS fournit des réponses aux questions les plus fréquemment posées en matière de sécurité qu'AWS reçoit de ses utilisateurs ?",
     "options": [
-      "Artefact AWS",
+      "AWS Artefact",
       "Amazon Connect",
       "Chatbot AWS",
       "Centre de connaissances AWS"
@@ -436,7 +437,7 @@ export const examQuestions = [
     "id": 31,
     "question": "Un utilisateur a besoin d'un accès programmatique aux ressources AWS via l'interface de ligne de commande AWS ou l'API AWS. Quelle option lui fournira l'accès approprié ?",
     "options": [
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Clés d'accès",
       "Clés publiques SSH",
       "Clés AWS Key Management Service (AWS Key Management Service (AWS KMS))"
@@ -569,7 +570,7 @@ export const examQuestions = [
     "options": [
       "AWS CloudTrail",
       "AWS Trusted Advisor",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS X-Ray"
     ],
     "correct": [
@@ -753,7 +754,7 @@ export const examQuestions = [
     "options": [
       "Amazon S3",
       "Gestion des identités et des accès AWS (IAM)",
-      "Équilibreurs de charge élastiques",
+      "Elastic Load Balancing",
       "AWS WAF"
     ],
     "correct": [
@@ -839,7 +840,7 @@ export const examQuestions = [
     "options": [
       "Gestion des identités et des accès AWS (IAM)",
       "AWS CloudTrail",
-      "Optimiseur de calcul AWS",
+      "AWS Calcul Optimizer",
       "Amazon EventBridge"
     ],
     "correct": [
@@ -896,7 +897,7 @@ export const examQuestions = [
       "Amazon Connect",
       "Amazon AppStream 2.0",
       "Amazon WorkSpaces",
-      "VPN site à site AWS",  
+      "AWS Site-to-Site VPN",  
       "Amazon Elastic Container Service (Amazon ECS)"
     ],
     "correct": [
@@ -925,7 +926,7 @@ export const examQuestions = [
     "question": "Quel service AWS prend en charge une architecture hybride qui offre aux utilisateurs la possibilité d’étendre l’infrastructure AWS, les services AWS, les API et les outils aux centres de données, aux environnements de colocation ou aux installations sur site ?",
     "options": [
       "AWS Snowmobile",
-      "Zones locales AWS",
+      "AWS Local Zones",
       "AWS Outposts",
       "AWS Fargate"
     ],
@@ -955,7 +956,7 @@ export const examQuestions = [
       "Amazon Connect",
       "Amazon AppStream 2.0",
       "Amazon WorkSpaces",
-      "VPN site à site AWS", 
+      "AWS Site-to-Site VPN", 
       "Amazon Elastic Container Service (Amazon ECS)"
     ],
     "correct": [
@@ -997,10 +998,10 @@ export const examQuestions = [
     "id": 70,
     "question": "Une entreprise souhaite évaluer son état de préparation opérationnelle. Elle souhaite également identifier et atténuer les risques opérationnels avant le lancement d'un nouveau produit. Quel plan de support AWS propose des conseils et une assistance pour ce type d'événement, sans frais supplémentaires ?",
     "options": [
-      "Assistance commerciale AWS",
-      "Support de base AWS",
-      "Assistance aux développeurs AWS",
-      "Assistance AWS Enterprise"
+      "AWS Business Support",
+      "AWS Basic Support",
+      "AWS Developer Support",
+      "AAWS Enterprise Support"
     ],
     "correct": [
       3
@@ -1014,7 +1015,7 @@ export const examQuestions = [
       "AWS Systems Manager",
       "AWS Secrets Manager",
       "AWS License Manager",
-      "Services gérés AWS"
+      "AWS Services Managed" 
     ],
     "correct": [
       1
@@ -1185,9 +1186,9 @@ export const examQuestions = [
     "id": 83,
     "question": "Quelle est la meilleure ressource pour un utilisateur pour trouver des informations et des rapports liés à la conformité sur AWS ?",
     "options": [
-      "Artefact AWS",
+      "AWS Artefact",
       "Place de marché AWS",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Assistance AWS"
     ],
     "correct": [
@@ -1289,7 +1290,7 @@ export const examQuestions = [
       "Calculateur de prix AWS",
       "Amazon CloudWatch",
       "AWS Cost Explorer",
-      "Budgets AWS"
+      "AWS Budgets"
     ],
     "correct": [
       0
@@ -1470,8 +1471,8 @@ export const examQuestions = [
     "id": 103,
     "question": "Quel outil AWS donne aux utilisateurs la possibilité de planifier leur utilisation des services, les coûts des services et les réservations d’instances, et leur permet également de définir des alertes personnalisées lorsque leurs coûts ou leur utilisation dépassent les seuils établis ?",
     "options": [
-      "Explorateur de coûts",
-      "Budgets AWS",
+      "AWS Cost Explorer",
+      "AWS Budgets",
       "Rapport sur les coûts et l'utilisation d'AWS",
       "Rapport d'instance réservée"
     ],
@@ -1574,7 +1575,7 @@ export const examQuestions = [
     "question": "Une entreprise doit suivre l'activité de ses comptes AWS et savoir quand un appel d'API est effectué sur ses ressources AWS. Quel outil ou service AWS peut être utilisé pour répondre à ces exigences ?",
     "options": [
       "Amazon CloudWatch",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS CloudTrail",
       "AWS IAM"
     ],
@@ -1629,7 +1630,7 @@ export const examQuestions = [
     "id": 114,
     "question": "Une entreprise de médias sociaux souhaite protéger son application web contre les failles de sécurité courantes telles que les injections SQL et les scripts intersites. Quel service AWS répondra à ces exigences ?",
     "options": [
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS WAF",
       "Amazon GuardDuty",
       "Amazon CloudWatch"
@@ -1658,7 +1659,7 @@ export const examQuestions = [
     "question": "Une entreprise souhaite un processus automatisé pour analyser en continu ses instances Amazon EC2 à la recherche de vulnérabilités logicielles. Quel service AWS répondra à ces exigences ?",
     "options": [
       "Amazon GuardDuty",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Amazon Detective",
       "Amazon Cognito"
     ],
@@ -1699,7 +1700,7 @@ export const examQuestions = [
     "id": 119,
     "question": "Une entreprise souhaite concevoir un système de stockage centralisé pour gérer les données de configuration et les mots de passe de ses applications métier critiques. Quel service ou fonctionnalité AWS répondra le mieux à ces exigences ?",
     "options": [
-      "Magasin de paramètres AWS Systems Manager",
+      "AWS Systems Manager Parameter Store",
       "AWS Secrets Manager",
       "AWS Config",
       "Amazon S3"
@@ -1758,7 +1759,7 @@ export const examQuestions = [
       "AWS WAF",
       "Listes de contrôle d'accès réseau",
       "Groupes de sécurité",
-      "AWS Certificate Manager (ACM) (ACM)"
+      "AWS Certificate Manager (ACM)"
     ],
     "correct": [
       0
@@ -2059,7 +2060,7 @@ export const examQuestions = [
     "id": 144,
     "question": "Quel service AWS Cloud peut envoyer des alertes aux clients si les seuils de dépenses personnalisés sont dépassés ?",
     "options": [
-      "Budgets AWS",
+      "AWS Budgets",
       "AWS Cost Explorer",
       "Balises de répartition des coûts AWS",
       "AWS Organizations"
@@ -2074,9 +2075,9 @@ export const examQuestions = [
     "question": "Une entreprise envisage de migrer vers le cloud AWS. Elle souhaite utiliser le cadre d'adoption du cloud AWS (AWS CAF) pour définir et suivre les résultats opérationnels dans le cadre de sa transformation cloud. Quelle fonctionnalité de gouvernance du cadre d'adoption du cloud AWS CAF répondra à ces exigences ?",
     "options": [
       "Gestion des avantages sociaux",
-      "Gestion des risques",
-      "Gestion du portefeuille d'applications",
-      "Gestion financière dans le cloud"
+      "Risk Management",
+      "Application Portfolio Management",
+      "Cloud Financial Management"
     ],
     "correct": [
       0
@@ -2256,7 +2257,7 @@ export const examQuestions = [
     "question": "Quel service AWS aide les utilisateurs à auditer l’activité des API sur leur compte AWS ?",
     "options": [
       "AWS CloudTrail",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS WAF",
       "AWS Config"
     ],
@@ -2313,7 +2314,7 @@ export const examQuestions = [
     "options": [
       "Amazon GuardDuty",
       "Amazon Macie",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS Shield"
     ],
     "correct": [
@@ -2497,9 +2498,9 @@ export const examQuestions = [
     "question": "Quel service ou outil AWS peut être utilisé pour capturer des informations sur le trafic entrant et sortant dans un Amazon VPC ?",
     "options": [
       "VPC Flow Logs",
-      "Inspecteur Amazon",
-      "Services de point de terminaison VPC",
-      "passerelle NAT"
+      "Amazon Inspector",
+      "VPC Endpoint",
+      "Passerelle NAT"
     ],
     "correct": [
       0
@@ -2525,7 +2526,7 @@ export const examQuestions = [
     "question": "Quel service AWS peut être utilisé pour récupérer des rapports de conformité à la demande ?",
     "options": [
       "AWS Secrets Manager",
-      "Artefact AWS",
+      "AWS Artefact",
       "AWS Security Hub",
       "AWS Certificate Manager (ACM)"
     ],
@@ -2540,7 +2541,7 @@ export const examQuestions = [
     "options": [
       "AWS WAF",
       "AWS Trusted Advisor",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS Shield"
     ],
     "correct": [
@@ -2553,8 +2554,8 @@ export const examQuestions = [
     "question": "Une entreprise envisage de migrer vers le cloud AWS. Elle collecte des informations sur son infrastructure sur site et a besoin d'informations telles que le nom d'hôte, l'adresse IP et l'adresse MAC. Quel service AWS répondra à ces exigences ?",
     "options": [
       "AWS DataSync",
-      "Service de migration d'applications AWS",
-      "Quel service AWS répondra à ces exigences ?",
+      "AWS Application Migration Service",
+      "AWS Application Discovery Service",
       "Service de migration de base de données AWS (AWS DMS)"
     ],
     "correct": [
@@ -2583,7 +2584,7 @@ export const examQuestions = [
       "Cadre d'adoption du cloud AWS (AWS CAF)",
       "Calculateur de prix AWS",
       "Cadre AWS bien conçu",
-      "Budgets AWS"
+      "AWS Budgets"
     ],
     "correct": [
       0
@@ -2714,8 +2715,8 @@ export const examQuestions = [
     "id": 190,
     "question": "Une entreprise souhaite créer des modèles réutilisables pour déployer plusieurs ressources AWS. Quel service ou fonctionnalité AWS peut-elle utiliser pour répondre à ce besoin ?",
     "options": [
-      "Place de marché AWS",
-      "Image machine Amazon (AMI)",
+      "AWS MarketPlace",
+      "Amazon machine Image (AMI)",
       "AWS CloudFormation",
       "AWS OpsWorks"
     ],
@@ -2728,7 +2729,7 @@ export const examQuestions = [
     "id": 191,
     "question": "Une entreprise développe une application nécessitant la capacité d'envoyer, de stocker et de recevoir des messages entre ses composants. Elle doit également traiter les messages selon  l'ordre FIFO (premier entré, premier sorti). Quel service AWS doit-elle utiliser ?",
     "options": [
-      "Fonctions d'étape AWS",
+      "AWS Step Functions",
       "Amazon Simple Notification Service (Amazon SNS)",
       "Flux de données Amazon Kinesis",
       "Amazon Simple Queue Service (Amazon SQS)"
@@ -2786,7 +2787,7 @@ export const examQuestions = [
     "id": 195,
     "question": "Une entreprise héberge une application sur plusieurs instances Amazon EC2. L'application utilise Amazon Simple Notification Service (Amazon SNS) pour envoyer des messages. Quel service ou fonctionnalité AWS autorisera l'application à accéder aux services AWS requis ?",
     "options": [
-      "AWS Certificate Manager (ACM) (ACM)",
+      "AWS Certificate Manager (ACM)",
       "Rôles IAM",
       "AWS Security Hub",
       "Amazon GuardDuty"
@@ -2930,7 +2931,7 @@ export const examQuestions = [
     "question": "Quel service ou ressource AWS peut être utilisé pour identifier les services qui ont été utilisés par un utilisateur dans une plage de dates spécifiée ?",
     "options": [
       "Listes de contrôle d'accès (ACL) Amazon S3",
-      "AWS Certificate Manager (ACM) (ACM)",
+      "AWS Certificate Manager (ACM)",
       "Analyseur d'accès au réseau",
       "Analyseur d'accès AWS Identity and Access Management"
     ],
@@ -2957,7 +2958,7 @@ export const examQuestions = [
     "id": 207,
     "question": "Une entreprise souhaite créer des tableaux de bord Amazon QuickSight chaque semaine à partir de ses données de facturation. Quelle fonctionnalité ou quel outil AWS peut-elle utiliser pour répondre à ces besoins ?",
     "options": [
-      "Budgets AWS",
+      "AWS Budgets",
       "AWS Cost Explorer",
       "Rapport sur les coûts et l'utilisation d'AWS",
       "Détection des anomalies de coût AWS"
@@ -2973,7 +2974,7 @@ export const examQuestions = [
     "options": [
       "AWS Storage Gateway",
       "AWS Snowcone",
-      "Sauvegarde AWS",
+      "AWS Backup",
       "Amazon Elastic File System (Amazon EFS)"
     ],
     "correct": [
@@ -2999,7 +3000,7 @@ export const examQuestions = [
     "id": 210,
     "question": "Une entreprise doit planifier, programmer et exécuter des centaines de milliers de tâches informatiques sur AWS. Quel service AWS peut-elle utiliser pour répondre à ce besoin ?",
     "options": [
-      "Fonctions d'étape AWS",
+      "AWS Step Functions",
       "AWS Service Catalog",
       "Amazon Simple Queue Service (Amazon SQS)",
       "Lot AWS"
@@ -3047,7 +3048,7 @@ export const examQuestions = [
     "id": 213,
     "question": "Quel service de sécurité AWS protège les applications contre les attaques par déni de service distribué avec une détection permanente et des atténuations automatiques en ligne ?",
     "options": [
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Pare-feu d'application Web AWS (AWS WAF)",
       "Équilibrage de charge élastique (ELB)",
       "AWS Shield"
@@ -3147,8 +3148,8 @@ export const examQuestions = [
     "options": [
       "AWS Certificate Manager (ACM)",
       "AWS Systems Manager",
-      "Artefact AWS",
-      "Inspecteur Amazon"
+      "AWS Artefact",
+      "Amazon Inspector"
     ],
     "correct": [
       2
@@ -3193,7 +3194,7 @@ export const examQuestions = [
       "AWS Shield",
       "AWS Config",
       "AWS IAM",
-      "Inspecteur Amazon"
+      "Amazon Inspector"
     ],
     "correct": [
       1
@@ -3233,7 +3234,7 @@ export const examQuestions = [
     "question": "Une entreprise souhaite une évaluation personnalisée de son environnement sur site actuel. Elle souhaite comprendre ses coûts d'exploitation prévisionnels dans le cloud AWS. Quel service ou outil AWS répondra à ces exigences ?",
     "options": [
       "AWS Trusted Advisor",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS Control Tower",
       "Évaluateur de migration"
     ],
@@ -3247,8 +3248,8 @@ export const examQuestions = [
     "question": "Une entreprise composée de plusieurs unités opérationnelles souhaite centraliser la gestion et la gouvernance de ses environnements cloud AWS. Elle souhaite automatiser la création de comptes AWS, appliquer des politiques de contrôle des services (SCP) et simplifier les processus de facturation. Quel service ou outil AWS doit-elle utiliser pour répondre à ces exigences ?",
     "options": [
       "AWS Organizations",
-      "Explorateur de coûts",
-      "Budgets AWS",
+      "AWS Cost Explorer",
+      "AWS Budgets",
       "AWS Trusted Advisor"
     ],
     "correct": [
@@ -3280,7 +3281,7 @@ export const examQuestions = [
       "Outil de préparation à l'adoption du cloud",
       "Centre de migration AWS",
       "Service de migration de base de données AWS (AWS DMS)",
-      "Service de migration d'applications AWS"
+      "AWS Application Migration Service"
     ],
     "correct": [
       2
@@ -3305,7 +3306,7 @@ export const examQuestions = [
     "id": 231,
     "question": "Une entreprise héberge une grande quantité de données sur AWS. Elle souhaite déterminer si certaines de ces données doivent être considérées comme sensibles. Quel service AWS répondra à ce besoin ?",
     "options": [
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Amazon Macie",
       "Gestion des identités et des accès AWS (IAM)",
       "Amazon CloudWatch"
@@ -3713,7 +3714,7 @@ export const examQuestions = [
     "id": 260,
     "question": "Une entreprise a besoin d'un service AWS fournissant une base claire de ce qu'elle exploite dans ses centres de données sur site. Elle a également besoin d'une estimation du coût d'exécution de ses charges de travail sur site dans le cloud AWS. Quel service ou outil AWS répondra à ces exigences ?",
     "options": [
-      "Optimiseur de calcul AWS",
+      "AWS Calcul Optimizer",
       "AWS Cost Explorer",
       "Agent AWS Systems Manager (agent SSM)",
       "Évaluateur de migration"
@@ -3730,7 +3731,7 @@ export const examQuestions = [
       "AWS Systems Manager",
       "AWS Organizations",
       "AWS License Manager",
-      "Explorateur de coûts"
+      "AWS Cost Explorer"
     ],
     "correct": [
       1
@@ -3785,7 +3786,7 @@ export const examQuestions = [
     "options": [
       "Amazon EventBridge",
       "Calculer les plans d'épargne",
-      "Budgets AWS",
+      "AWS Budgets",
       "Évaluateur de migration"
     ],
     "correct": [
@@ -3960,7 +3961,7 @@ export const examQuestions = [
     "options": [
       "Service de migration de base de données AWS (AWS DMS)",
       "AWS DataSync",
-      "Sauvegarde AWS",
+      "AWS Backup",
       "AWS Snowball Edge"
     ],
     "correct": [
@@ -4061,7 +4062,7 @@ export const examQuestions = [
     "options": [
       "Rapport sur les coûts et l'utilisation d'AWS",
       "Rapports d'identification IAM",
-      "Artefact AWS",
+      "AWS Artefact",
       "Rapports Amazon CloudFront"
     ],
     "correct": [
@@ -4074,7 +4075,7 @@ export const examQuestions = [
     "question": "Une entreprise utilise les services et outils de sécurité AWS. Elle a besoin d'un service pour gérer les alertes de sécurité et les organiser dans un tableau de bord unique. Quel service AWS doit-elle utiliser pour répondre à ces exigences ?",
     "options": [
       "Amazon GuardDuty",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Amazon Macie",
       "AWS Security Hub"
     ],
@@ -4117,7 +4118,7 @@ export const examQuestions = [
     "options": [
       "Amazon GuardDuty",
       "AWS Security Hub",
-      "Artefact AWS",
+      "AWS Artefact",
       "AWS Shield"
     ],
     "correct": [
@@ -4336,7 +4337,7 @@ export const examQuestions = [
     "options": [
       "Journaux Amazon CloudWatch",
       "AWS Security Hub",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "AWS CloudTraiI"
     ],
     "correct": [
@@ -4362,7 +4363,7 @@ export const examQuestions = [
     "id": 305,
     "question": "Une entreprise souhaite migrer des données non structurées vers AWS. Ces données doivent être transférées de manière sécurisée, avec un chiffrement en temps réel et une validation de bout en bout. Quel service AWS répondra à ces exigences ?",
     "options": [
-      "Service de migration d'applications AWS",
+      "AWS Application Migration Service",
       "Amazon Elastic File System (Amazon EFS)",
       "AWS DataSync",
       "Centre de migration AWS"
@@ -4447,7 +4448,7 @@ export const examQuestions = [
     "question": "Quel service ou fonctionnalité AWS donne aux utilisateurs la possibilité de capturer des informations sur le trafic réseau dans un VPC ?",
     "options": [
       "VPC Flow Logs",
-      "Inspecteur Amazon",
+      "Amazon Inspector",
       "Tables de routage VPC",
       "AWS CloudTrail"
     ],
@@ -4531,7 +4532,7 @@ export const examQuestions = [
     "question": "Une entreprise souhaite migrer ses bases de données sur site vers des services de bases de données cloud gérés grâce à un processus de migration simplifié. Quel service ou outil AWS peut l'aider à répondre à ce besoin ?",
     "options": [
       "AWS Storage Gateway",
-      "Service de migration d'applications AWS",
+      "AWS Application Migration Service",
       "AWS DataSync",
       "Service de migration de base de données AWS (AWS DMS)"
     ],
@@ -4934,10 +4935,10 @@ export const examQuestions = [
     "question": "Quelles sont les options offertes par la perspective de gouvernance d'AWS Cloud Adoption Framework (AWS CAF) ? (Choisissez deux options.)",
     "options": [
       "Gestion des identités et des accès",
-      "Gestion financière dans le cloud",
-      "Gestion du portefeuille d'applications",
-      "Gestion de l'innovation",
-      "Gestion de produits"
+      "Cloud Financial Management",
+      "Application Portfolio Management",
+      "Innovation Management",
+      "Product Management"
     ],
     "correct": [
       1,
@@ -4950,8 +4951,8 @@ export const examQuestions = [
     "id": 346,
     "question": "Quel service AWS fournit un emplacement unique pour suivre la progression des migrations d’applications ?",
     "options": [
-      "Service de découverte d'applications AWS",
-      "Service de migration d'applications AWS",
+      "AWS Application Discovery Service",
+      "AWS Application Migration Service",
       "AWS Service Catalog",
       "Centre de migration AWS"
     ],
@@ -5230,7 +5231,7 @@ export const examQuestions = [
     "options": [
       "Amazon CloudFront",
       "AWS Storage Gateway",
-      "Sauvegarde AWS",
+      "AWS Backup",
       "AWS DataSync"
     ],
     "correct": [
@@ -5271,8 +5272,8 @@ export const examQuestions = [
     "question": "Une entreprise souhaite intégrer le traitement automatique du langage naturel (TALN) à ses tableaux de bord de business intelligence (BI). Elle souhaite poser des questions et obtenir des réponses avec des visualisations pertinentes. Quel service ou outil AWS répondra à ces exigences ?",
     "options": [
       "Amazon Macie",
-      "Reconnaissance d'Amazon",
-      "Amazon QuickSight Q",
+      "Amazon Rekognition Image",
+      "Amazon QuickSight",
       "Amazon Lex"
     ],
     "correct": [
@@ -5371,7 +5372,7 @@ export const examQuestions = [
       "Amazon EC2",
       "Amazon RDS",
       "Amazon Lightsail",
-      "Fonctions d'étape AWS"
+      "AWS Step Functions"
     ],
     "correct": [
       0
@@ -5383,7 +5384,7 @@ export const examQuestions = [
     "question": "Quel service AWS aidera une entreprise à planifier une migration vers AWS en collectant les données de configuration, d’utilisation et de comportement des centres de données sur site ?",
     "options": [
       "Groupes de ressources AWS",
-      "Service de découverte d'applications AWS",
+      "AWS Application Discovery Service",
       "AWS Service Catalog",
       "AWS Systems Manager"
     ],
@@ -5411,9 +5412,9 @@ export const examQuestions = [
     "question": "Une entreprise en est aux premiers stades de la planification de sa migration vers AWS. Elle souhaite obtenir le coût total de possession mensuel estimé pour ses futures instances Amazon EC2 et le stockage associé. Quel service ou outil AWS doit-elle utiliser pour répondre à ces besoins ?",
     "options": [
       "Calculateur de prix AWS",
-      "Optimiseur de calcul AWS",
+      "AWS Calcul Optimizer",
       "AWS Trusted Advisor",
-      "Service de migration d'applications AWS"
+      "AWS Application Migration Service"
     ],
     "correct": [
       0
@@ -5438,10 +5439,10 @@ export const examQuestions = [
     "id": 380,
     "question": "Quelles sont les options offertes par les fonctionnalités du point de vue des personnes d'AWS Cloud Adoption Framework (AWS CAF) ? (Choisissez deux options.)",
     "options": [
-      "Alignement organisationnel",
-      "Gestion de portefeuille",
+      "Organizational Alignment",
+      "Portfolio Management",
       "Conception de l'organisation",
-      "Gestion des risques",
+      "Risk Management",
       "Développement d'applications modernes"
     ],
     "correct": [
@@ -5511,11 +5512,11 @@ export const examQuestions = [
     "id": 385,
     "question": "Quelles fonctionnalités d'AWS Cloud Adoption Framework (AWS CAF) appartiennent à la perspective de gouvernance ? (Choisissez deux options.)",
     "options": [
-      "Gestion de programmes et de projets",
-      "Gestion de produits",
-      "Gestion de portefeuille",
-      "Gestion des risques",
-      "Gestion d'événements"
+      "Project & Program Management",
+      "Product Management",
+      "Portfolio Management",
+      "Risk Management",
+      "Event Management"
     ],
     "correct": [
       0,
