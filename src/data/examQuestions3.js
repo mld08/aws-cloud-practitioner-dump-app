@@ -120,7 +120,8 @@ export const examQuestions = [
       "Fournir une orchestration de conteneurs hautes performances",
       "Création et rotation des clés de chiffrement",
       "Détecter les ressources sous-utilisées pour réduire les coûts",
-      "Améliorer la sécurité en surveillant de manière proactive l'environnement AWS E. Mise en œuvre du balisage forcé sur les ressources AWS"
+      "Améliorer la sécurité en surveillant de manière proactive l'environnement AWS",
+      "Mise en œuvre du balisage forcé sur les ressources AWS"
     ],
     "correct": [
       2,
@@ -395,7 +396,7 @@ export const examQuestions = [
       "Classer les actifs de l'entreprise dans le cloud AWS.",
       "Déterminez les zones de disponibilité à utiliser pour les compartiments Amazon S3.",
       "Corrigez ou mettez à niveau Amazon DynamoDB.",
-      "E. Sélectionnez les instances Amazon EC2 sur lesquelles exécuter AWS Lambda."
+      "Sélectionnez les instances Amazon EC2 sur lesquelles exécuter AWS Lambda."
     ],
     "correct": [
       0,
@@ -3080,7 +3081,7 @@ export const examQuestions = [
     "question": "Quel modèle de tarification d'instance Amazon EC2 peut offrir des remises allant jusqu'à 90 % ?",
     "options": [
       "Reserved Instances",
-      "Sur demande",
+      "On-Demand Instances",
       "Dedicated Hosts",
       "Spot Instances"
     ],
@@ -3850,7 +3851,7 @@ export const examQuestions = [
       "Développement continu"
     ],
     "correct": [
-      1, 4
+      1, 2
     ],
     "domain": "Général",
     "maxAnswers": 2
@@ -3871,7 +3872,7 @@ export const examQuestions = [
   },
   {
     "id": 271,
-    "question": "Une équipe de chercheurs va collecter des données dans des endroits isolés du monde entier. Nombre d'entre eux ne disposent pas d'une connexion Internet. L'équipe doit collecter les données sur le terrain et les transférer ultérieurement vers le cloud AWS. Quel service AWS répondra à ces exigences ?",
+    "question": "Une équipe de chercheurs va collecter des données dans des endroits isolés du monde entier. Nombreux d'entre eux ne disposent pas d'une connexion Internet. L'équipe doit collecter les données sur le terrain et les transférer ultérieurement vers le cloud AWS. Quel service AWS répondra à ces exigences ?",
     "options": [
       "AWS Outposts",
       "AWS DataSync",
@@ -4032,7 +4033,7 @@ export const examQuestions = [
     "id": 282,
     "question": "Une entreprise migre son serveur sur site vers une instance Amazon EC2. Le serveur doit rester actif en permanence pendant les 12 prochains mois. Quelle option tarifaire EC2 est la plus rentable pour la charge de travail de l'entreprise ?",
     "options": [
-      "Sur demande",
+      "On-Demand Instances",
       "Dedicated Hosts",
       "Spot Instances",
       "Reserved Instances"
@@ -4439,7 +4440,7 @@ export const examQuestions = [
       "AWS Organizations",
       "AWS Fargate",
       "AWS WAF",
-      "Espaces de travail AWS"
+      "AWS Workspaces"
     ],
     "correct": [
       3
@@ -4549,7 +4550,7 @@ export const examQuestions = [
     "question": "Une entreprise a besoin d'un serveur de fichiers entièrement géré prenant en charge nativement les charges de travail et les systèmes de fichiers Microsoft. Ce serveur doit également prendre en charge le protocole SMB. Quel service AWS l'entreprise doit-elle utiliser pour répondre à ces exigences ?",
     "options": [
       "Amazon Elastic File System (Amazon EFS)",
-      "Quel service AWS l'entreprise doit-elle utiliser pour répondre à ces exigences ?",
+      "Amazon FSx pour Lustre",
       "Amazon FSx for Windows File Server",
       "Amazon Elastic Block Store (Amazon EBS)"
     ],
@@ -4827,7 +4828,7 @@ export const examQuestions = [
     "options": [
       "IAM Credential Report",
       "AWS IAM Identity Center (AWS IAM Identity Center (AWS Single Sign-On))",
-      "Analyseur d'accès AWS Identity and Access Management",
+      "AWS Identity and Access Management Access Analyzer",
       "Rapport sur les coûts et l'utilisation d'AWS"
     ],
     "correct": [

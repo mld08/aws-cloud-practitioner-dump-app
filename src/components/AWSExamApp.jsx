@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Clock, CheckCircle, XCircle, RotateCcw, Trophy, AlertCircle, Eye, ArrowLeft } from 'lucide-react';
 import { examQuestions } from '../data/examQuestions3';
 
-const EXAM_DURATION = 120 * 60; // 2 heures en secondes
+const EXAM_DURATION = 90 * 60; // 1 heures en secondes
 const TOTAL_QUESTIONS = 65;
 const PASSING_SCORE = 75;
 
@@ -204,7 +204,7 @@ export default function AWSExamApp() {
             <div className="grid md:grid-cols-2 gap-4 text-left">
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5 text-blue-600" />
-                <span className="text-gray-700">Durée: 2 heures</span>
+                <span className="text-gray-700">Durée: 1 heure 30 minutes</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="w-5 h-5 text-green-600" />
