@@ -7,7 +7,7 @@ Bienvenue dans la première version de l'application ! Ce projet est une applica
 ### 1️⃣ Cloner le dépôt
 ```bash
 git clone https://github.com/mld08/aws-cloud-practitioner-dump-app
-cd devicehub-react-master
+cd aws-cloud-practitioner-dump-app
 ```
 
 ### 2️⃣ Installer les dépendances
