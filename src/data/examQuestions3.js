@@ -783,7 +783,7 @@ export const examQuestions = [
     "question": "Une entreprise utilise Amazon DynamoDB. Quelle tâche lui incombe, selon le modèle de responsabilité partagée d'AWS ?",
     "options": [
       "Corrigez le système d'exploitation.",
-      "Quelle tâche lui incombe, selon le modèle de responsabilité partagée d'AWS ?",
+      "Provisionner les hôtes",
       "Gérer les autorisations d'accès à la base de données.",
       "Sécuriser le système d'exploitation."
     ],
