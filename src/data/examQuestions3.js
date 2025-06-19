@@ -1448,7 +1448,7 @@ export const examQuestions = [
     "question": "Une entreprise exécute une charge de travail dans le cloud AWS. Quelle bonne pratique AWS garantit l'architecture la plus rentable pour cette charge de travail ?",
     "options": [
       "Accouplement lâche",
-      "Redimensionnement",
+      "Auto Scaling",
       "Mise en cache",
       "Redondance"
     ],
@@ -3297,7 +3297,7 @@ export const examQuestions = [
     "question": "Quel concept de cloud est démontré à l’aide d’AWS Compute Optimizer ?",
     "options": [
       "Validation de sécurité",
-      "Redimensionnement",
+      "Auto Scaling",
       "Élasticité",
       "Portée mondiale"
     ],
