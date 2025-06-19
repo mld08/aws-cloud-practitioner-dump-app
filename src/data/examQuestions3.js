@@ -1307,7 +1307,7 @@ export const examQuestions = [
       "AWS SDK",
       "AWS CodeDeploy",
       "AWS Lambda",
-      "Lot AWS"
+      "AWS Batch"
     ],
     "correct": [
       0
@@ -3006,7 +3006,7 @@ export const examQuestions = [
       "AWS Step Functions",
       "AWS Service Catalog",
       "Amazon Simple Queue Service (Amazon SQS)",
-      "Lot AWS"
+      "AWS Batch"
     ],
     "correct": [
       3
@@ -3422,7 +3422,7 @@ export const examQuestions = [
     "question": "Quel service AWS une entreprise peut-elle utiliser pour concevoir et créer visuellement des applications sans serveur ?",
     "options": [
       "AWS Lambda",
-      "Lot AWS",
+      "AWS Batch",
       "AWS Application Composer",
       "AWS App Runner"
     ],
@@ -5055,8 +5055,8 @@ export const examQuestions = [
     "id": 353,
     "question": "Quel service ou composant AWS permet au trafic entrant provenant d’Internet d’accéder à un VPC ?",
     "options": [
-      "passerelle Internet",
-      "passerelle NAT",
+      "Passerelle Internet",
+      "Passerelle NAT",
       "AWS WAF",
       "VPC Peering"
     ],
