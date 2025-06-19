@@ -277,7 +277,7 @@ export const examQuestions = [
     "question": "Quel service ou fonctionnalité AWS permet à un utilisateur d’établir une connexion réseau dédiée entre le centre de données sur site d’une entreprise et le cloud AWS ?",
     "options": [
       "AWS Direct Connect",
-      "Appairage VPC",
+      "VPC Peering",
       "VPN AWS",
       "Amazon Route 53"
     ],
@@ -394,7 +394,8 @@ export const examQuestions = [
       "Configurez le pare-feu du groupe de sécurité fourni par AWS.",
       "Classer les actifs de l'entreprise dans le cloud AWS.",
       "Déterminez les zones de disponibilité à utiliser pour les compartiments Amazon S3.",
-      "Corrigez ou mettez à niveau Amazon DynamoDB. E. Sélectionnez les instances Amazon EC2 sur lesquelles exécuter AWS Lambda."
+      "Corrigez ou mettez à niveau Amazon DynamoDB.",
+      "E. Sélectionnez les instances Amazon EC2 sur lesquelles exécuter AWS Lambda."
     ],
     "correct": [
       0,
@@ -641,7 +642,8 @@ export const examQuestions = [
       "Spot Instances",
       "On-Demand Instances",
       "Reserved Instances",
-      "Savings Plans E. Dedicated Hosts"
+      "Savings Plans",
+      "E. Dedicated Hosts"
     ],
     "correct": [
       2,
@@ -825,7 +827,8 @@ export const examQuestions = [
       "Groupes de sécurité",
       "VPC Flow Logs",
       "Listes de contrôle d'accès réseau",
-      "Amazon CloudWatch E. AWS CloudTrail"
+      "Amazon CloudWatch",
+      "E. AWS CloudTrail"
     ],
     "correct": [
       0,
@@ -1187,7 +1190,7 @@ export const examQuestions = [
     "question": "Quelle est la meilleure ressource pour un utilisateur pour trouver des informations et des rapports liés à la conformité sur AWS ?",
     "options": [
       "AWS Artefact",
-      "Place de marché AWS",
+      "AWS MarketPlace",
       "Amazon Inspector",
       "Assistance AWS"
     ],
@@ -2626,7 +2629,7 @@ export const examQuestions = [
       "VPN AWS",
       "Équilibrage de charge élastique",
       "AWS Direct Connect",
-      "Appairage VPC",      
+      "VPC Peering",      
       "Amazon CloudFront"
     ],
     "correct": [
@@ -2832,7 +2835,7 @@ export const examQuestions = [
       "Gestionnaire d'accès aux ressources AWS",
       "Services gérés AWS",
       "AWS License Manager",
-      "Place de marché AWS"
+      "AWS MarketPlace"
     ],
     "correct": [
       3
@@ -2885,10 +2888,10 @@ export const examQuestions = [
     "id": 202,
     "question": "Une entreprise possède une instance Amazon EC2 sur un sous-réseau privé. Elle souhaite établir une connexion à Internet pour récupérer les mises à jour du système d'exploitation tout en empêchant le trafic Internet d'accéder à l'instance EC2. Quel service géré AWS permet cette connexion ?",
     "options": [
-      "Point de terminaison VPC",
+      "VPC Endpoint",
       "passerelle NAT",
       "Amazon PrivateLink",
-      "Appairage VPC"
+      "VPC Peering"
     ],
     "correct": [
       1
@@ -3435,7 +3438,7 @@ export const examQuestions = [
       "Recherche de solutions partenaires AWS",
       "Centre de support AWS",
       "Console de gestion AWS",
-      "Place de marché AWS"
+      "AWS MarketPlace"
     ],
     "correct": [
       3
@@ -4281,7 +4284,7 @@ export const examQuestions = [
     "options": [
       "Listes de contrôle d'accès réseau",
       "Groupes de sécurité",
-      "Place de marché AWS",
+      "AWS MarketPlace",
       "AWS Trusted Advisor"
     ],
     "correct": [
@@ -4677,7 +4680,7 @@ export const examQuestions = [
       "Amazon Connect",
       "Amazon Route 53",
       "AWS Direct Connect",
-      "Appairage VPC"
+      "VPC Peering"
     ],
     "correct": [
       2
@@ -4690,7 +4693,7 @@ export const examQuestions = [
     "options": [
       "Points de terminaison VPC",
       "Amazon Route 53",
-      "Appairage VPC",
+      "VPC Peering",
       "AWS Direct Connect",
       "Passerelle de transit AWS"
     ],
@@ -4907,7 +4910,7 @@ export const examQuestions = [
     "question": "Une entreprise souhaite une application web permettant d'interagir avec différents services AWS. Quel service ou ressource AWS répondra à ce besoin ?",
     "options": [
       "AWS CloudShell",
-      "Place de marché AWS",
+      "AWS MarketPlace",
       "Console de gestion AWS",
       "AWS CLI"
     ],
@@ -5055,7 +5058,7 @@ export const examQuestions = [
       "passerelle Internet",
       "passerelle NAT",
       "AWS WAF",
-      "Appairage VPC"
+      "VPC Peering"
     ],
     "correct": [
       0
