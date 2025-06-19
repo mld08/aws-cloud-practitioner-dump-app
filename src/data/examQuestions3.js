@@ -1749,7 +1749,7 @@ export const examQuestions = [
       "AWS DataSync",
       "AWS Snowball Edge",
       "AWS Storage Gateway (File Gateway)",
-      "AWS DataSync"
+      "AWS Transfer Family"
     ],
     "correct": [
       2
@@ -2587,7 +2587,7 @@ export const examQuestions = [
     "options": [
       "Cadre d'adoption du cloud AWS (AWS CAF)",
       "Calculateur de prix AWS",
-      "Cadre AWS bien conçu",
+      "AWS Well-Architected Framework",
       "AWS Budgets"
     ],
     "correct": [
@@ -3283,7 +3283,7 @@ export const examQuestions = [
     "question": "Une entreprise doit migrer une base de données PostgreSQL de son site vers Amazon RDS. Quel service ou outil AWS doit-elle utiliser pour répondre à ce besoin ?",
     "options": [
       "Outil de préparation à l'adoption du cloud",
-      "Centre de migration AWS",
+      "AWS Migration Hub",
       "Service de migration de base de données AWS (AWS DMS)",
       "AWS Application Migration Service"
     ],
@@ -3623,7 +3623,7 @@ export const examQuestions = [
       "Assistance AWS",
       "Cadre d'adoption du cloud AWS (AWS CAF)",
       "Services gérés AWS (AMS)",
-      "Cadre AWS bien conçu"
+      "AWS Well-Architected Framework"
     ],
     "correct": [
       2
@@ -3706,8 +3706,8 @@ export const examQuestions = [
     "options": [
       "Cadre d'adoption du cloud AWS (AWS CAF)",
       "Services gérés AWS (AMS)",
-      "Cadre AWS bien conçu",
-      "Centre de migration AWS"
+      "AWS Well-Architected Framework",
+      "AWS Migration Hub"
     ],
     "correct": [
       0
@@ -3877,7 +3877,7 @@ export const examQuestions = [
       "AWS Outposts",
       "AWS DataSync",
       "AWS Snow Family",
-      "Centre de migration AWS"
+      "AWS Migration Hub"
     ],
     "correct": [
       2
@@ -4370,7 +4370,7 @@ export const examQuestions = [
       "AWS Application Migration Service",
       "Amazon Elastic File System (Amazon EFS)",
       "AWS DataSync",
-      "Centre de migration AWS"
+      "AWS Migration Hub"
     ],
     "correct": [
       2
@@ -4753,7 +4753,7 @@ export const examQuestions = [
     "id": 332,
     "question": "Quel service ou outil AWS peut fournir des recommandations de dimensionnement pour les ressources Amazon EC2 sans frais supplémentaires ?",
     "options": [
-      "Outil AWS bien conçu",
+      "AWS Well-Architected Framework",
       "Amazon CloudWatch",
       "AWS Cost Explorer",
       "Analyses Amazon S3"
@@ -4958,7 +4958,7 @@ export const examQuestions = [
       "AWS Application Discovery Service",
       "AWS Application Migration Service",
       "AWS Service Catalog",
-      "Centre de migration AWS"
+      "AWS Migration Hub"
     ],
     "correct": [
       3
