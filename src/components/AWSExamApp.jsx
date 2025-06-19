@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Clock, CheckCircle, XCircle, RotateCcw, Trophy, AlertCircle } from 'lucide-react';
+import { Clock, CheckCircle, XCircle, RotateCcw, Trophy, AlertCircle, Eye, ArrowLeft } from 'lucide-react';
 import { examQuestions } from '../data/examQuestions3';
 
 const EXAM_DURATION = 120 * 60; // 2 heures en secondes
@@ -13,6 +13,8 @@ export default function AWSExamApp() {
   const [timeLeft, setTimeLeft] = useState(EXAM_DURATION);
   const [questionBank, setquestionBank] = useState([]);
   const [score, setScore] = useState(0);
+  const [wrongAnswers, setWrongAnswers] = useState([]);
+  const [currentReviewQuestion, setCurrentReviewQuestion] = useState(0);
 
   // Générer des questions aléatoires
   const generateRandomQuestions = useCallback(() => {
@@ -46,7 +48,7 @@ export default function AWSExamApp() {
       }, 1000);
       return () => clearInterval(timer);
     }
-  }, [gameState, timeLeft ]);
+  }, [gameState, timeLeft]);
 
   // Formater le temps
   const formatTime = (seconds) => {
@@ -116,10 +118,9 @@ export default function AWSExamApp() {
   // Soumettre l'examen
   const submitExam = () => {
     let correctAnswers = 0;
-    questionBank.forEach(question => {
-      /*if (selectedAnswers[question.id] === question.correct) {
-        correctAnswers++;
-      }*/
+    const incorrectAnswers = [];
+
+    questionBank.forEach((question, index) => {
       const selected = selectedAnswers[question.id] || [];
       const correct = question.correct || [];
 
@@ -130,12 +131,38 @@ export default function AWSExamApp() {
         correct.every(ans => selected.includes(ans))
       ) {
         correctAnswers++;
+      } else {
+        incorrectAnswers.push({
+          ...question,
+          selectedAnswers: selected,
+          questionIndex: index
+        });
       }
     });
 
     const finalScore = Math.round((correctAnswers / TOTAL_QUESTIONS) * 100);
     setScore(finalScore);
+    setWrongAnswers(incorrectAnswers);
     setGameState('results');
+  };
+
+  // Voir les réponses incorrectes
+  const viewWrongAnswers = () => {
+    setCurrentReviewQuestion(0);
+    setGameState('review');
+  };
+
+  // Navigation dans la révision
+  const nextReviewQuestion = () => {
+    if (currentReviewQuestion < wrongAnswers.length - 1) {
+      setCurrentReviewQuestion(currentReviewQuestion + 1);
+    }
+  };
+
+  const prevReviewQuestion = () => {
+    if (currentReviewQuestion > 0) {
+      setCurrentReviewQuestion(currentReviewQuestion - 1);
+    }
   };
 
   // Redémarrer
@@ -145,6 +172,12 @@ export default function AWSExamApp() {
     setSelectedAnswers({});
     setScore(0);
     setTimeLeft(EXAM_DURATION);
+    setWrongAnswers([]);
+  };
+
+  // Retour aux résultats
+  const backToResults = () => {
+    setGameState('results');
   };
 
   // Initialiser les questions
@@ -234,6 +267,18 @@ export default function AWSExamApp() {
             </div>
           </div>
 
+          {wrongAnswers.length > 0 && (
+            <div className="mb-6">
+              <button
+                onClick={viewWrongAnswers}
+                className="bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-red-600 hover:to-red-700 transform hover:scale-105 transition-all duration-200 shadow-lg mr-4"
+              >
+                <Eye className="w-5 h-5 inline mr-2" />
+                Voir les réponses incorrectes ({wrongAnswers.length})
+              </button>
+            </div>
+          )}
+
           <button
             onClick={restartExam}
             className="bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-xl text-xl font-semibold hover:from-orange-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
@@ -245,6 +290,130 @@ export default function AWSExamApp() {
       </div>
     );
   }
+
+  // Écran de révision des réponses incorrectes
+    if (gameState === 'review') {
+      const currentWrongQ = wrongAnswers[currentReviewQuestion];
+      
+      return (
+        <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-50">
+          {/* Header */}
+          <div className="bg-white shadow-lg p-4">
+            <div className="max-w-6xl mx-auto flex justify-between items-center">
+              <div className="flex items-center space-x-4">
+                <button
+                  onClick={backToResults}
+                  className="flex items-center space-x-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all"
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                  <span>Retour aux résultats</span>
+                </button>
+                <h1 className="text-2xl font-bold text-gray-800">Révision des réponses incorrectes</h1>
+              </div>
+              <div className="text-gray-600">
+                Question {currentReviewQuestion + 1} sur {wrongAnswers.length} incorrectes
+              </div>
+            </div>
+          </div>
+  
+          <div className="max-w-4xl mx-auto p-6">
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              {currentWrongQ && (
+                <>
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
+                        {currentWrongQ.domain}
+                      </span>
+                      <span className="text-gray-500 text-sm">
+                        Question {currentWrongQ.questionIndex + 1} de l'examen
+                      </span>
+                    </div>
+  
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-6 leading-relaxed">
+                      {currentWrongQ.question}
+                    </h2>
+                  </div>
+  
+                  <div className="space-y-4 mb-8">
+                    {currentWrongQ.options.map((option, index) => {
+                      const isSelected = currentWrongQ.selectedAnswers.includes(index);
+                      const isCorrect = currentWrongQ.correct.includes(index);
+                      
+                      let className = "w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ";
+                      
+                      if (isCorrect) {
+                        className += "border-green-500 bg-green-50 text-green-800";
+                      } else if (isSelected && !isCorrect) {
+                        className += "border-red-500 bg-red-50 text-red-800";
+                      } else {
+                        className += "border-gray-200 bg-gray-50";
+                      }
+  
+                      return (
+                        <div key={index} className={className}>
+                          <div className="flex items-center space-x-3">
+                            <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
+                              isCorrect 
+                                ? 'border-green-500 bg-green-500' 
+                                : isSelected 
+                                  ? 'border-red-500 bg-red-500' 
+                                  : 'border-gray-300'
+                            }`}>
+                              {(isSelected || isCorrect) && (
+                                <div className="w-2 h-2 bg-white rounded-full"></div>
+                              )}
+                            </div>
+                            <span className="font-medium">
+                              {String.fromCharCode(65 + index)}. {option}
+                              {isCorrect && (
+                                <span className="ml-2 px-2 py-1 bg-green-600 text-white text-xs rounded-full">
+                                  Correct
+                                </span>
+                              )}
+                              {isSelected && !isCorrect && (
+                                <span className="ml-2 px-2 py-1 bg-red-600 text-white text-xs rounded-full">
+                                  Votre réponse
+                                </span>
+                              )}
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+  
+                  {currentWrongQ.explanation && (
+                    <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
+                      <h3 className="font-semibold text-blue-800 mb-2">Explication :</h3>
+                      <p className="text-blue-700">{currentWrongQ.explanation}</p>
+                    </div>
+                  )}
+  
+                  <div className="flex justify-between">
+                    <button
+                      onClick={prevReviewQuestion}
+                      disabled={currentReviewQuestion === 0}
+                      className="px-6 py-3 bg-gray-100 text-gray-600 rounded-lg font-medium hover:bg-gray-200 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    >
+                      ← Précédent
+                    </button>
+  
+                    <button
+                      onClick={nextReviewQuestion}
+                      disabled={currentReviewQuestion === wrongAnswers.length - 1}
+                      className="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg font-medium hover:from-red-600 hover:to-red-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                    >
+                      Suivant →
+                    </button>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    }
 
   const currentQ = questionBank[currentQuestion];
   const progress = ((currentQuestion + 1) / TOTAL_QUESTIONS) * 100;
@@ -295,7 +464,8 @@ export default function AWSExamApp() {
           <div className="bg-white rounded-xl shadow-lg p-4 sticky top-6">
             <h3 className="font-semibold text-gray-800 mb-4">Navigation</h3>
             <div className="grid grid-cols-5 gap-2 mb-4">
-              {questionBank.map((_ ,index)=>{
+              {/* Suppression fonctionnalité Mise en rouge des boutons de navigation */}
+              {/* {questionBank.map((_ ,index)=>{
                 const correct = questionBank[index]?.correct || [];
                 const selected = selectedAnswers[questionBank[index]?.id] || []
                 // console.log({"correct": correct} , {"selected" :selected})
@@ -318,7 +488,22 @@ export default function AWSExamApp() {
                   {index + 1}
                 </button>
               )
-              })}
+              })} */}
+
+              {questionBank.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => goToQuestion(index)}
+                  className={`w-10 h-10 rounded-lg text-sm font-medium transition-all ${index === currentQuestion
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : selectedAnswers[questionBank[index]?.id] !== undefined
+                      ? 'bg-green-100 text-green-700 hover:bg-green-200'
+                      : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                    }`}
+                >
+                  {index + 1}
+                </button>
+              ))}
             </div>
 
             <div className="space-y-2 text-sm">
@@ -401,8 +586,8 @@ export default function AWSExamApp() {
                         key={index}
                         onClick={() => selectAnswer(currentQ.id, index)}
                         className={`w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ${isSelected
-                            ? 'border-blue-500 bg-blue-50 text-blue-800'
-                            : 'border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100'
+                          ? 'border-blue-500 bg-blue-50 text-blue-800'
+                          : 'border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100'
                           }`}
                       >
                         <div className="flex items-center space-x-3">

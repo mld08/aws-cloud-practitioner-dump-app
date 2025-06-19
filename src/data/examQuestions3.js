@@ -1004,7 +1004,7 @@ export const examQuestions = [
       "AWS Business Support",
       "AWS Basic Support",
       "AWS Developer Support",
-      "AAWS Enterprise Support"
+      "AWS Enterprise Support"
     ],
     "correct": [
       3
