@@ -29,7 +29,6 @@ export default function AWSExamApp() {
   // Générer des questions aléatoires
   const generateRandomQuestions = useCallback((type) => {
     type==='Général' ? setTotalQuestion(65) : setTotalQuestion(20) ;
-    console.log(type);
     const shuffled = [...examQuestions].filter(item=>item.domain===type ).sort(() => Math.random() - 0.5);
     console.log(shuffled)
     return type ==='Général' ? shuffled.slice(0, TOTAL_QUESTIONS) : shuffled.slice(0 ,TOTAL_QUESTIONS) ;
