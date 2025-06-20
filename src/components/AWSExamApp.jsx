@@ -26,9 +26,11 @@ export default function AWSExamApp() {
   const [currentReviewQuestion, setCurrentReviewQuestion] = useState(0);
 
   // Générer des questions aléatoires
-  const generateRandomQuestions = useCallback(() => {
-    const shuffled = [...examQuestions].sort(() => Math.random() - 0.5);
-    return shuffled.slice(0, TOTAL_QUESTIONS);
+  const generateRandomQuestions = useCallback((type) => {
+    console.log(type);
+    const shuffled = [...examQuestions].filter(item=>item.domain===type ).sort(() => Math.random() - 0.5);
+    console.log(shuffled)
+    return type ==='Général' ? shuffled.slice(0, TOTAL_QUESTIONS) : shuffled.slice(0 ,20) ;
   }, []);
   const flagQ = (currentQ) => {
     setquestionBank((prev) =>
@@ -44,8 +46,8 @@ export default function AWSExamApp() {
   };
 
   // Démarrer l'examen
-  const startExam = () => {
-    const randomQuestions = generateRandomQuestions();
+  const startExam = (type) => {
+    const randomQuestions = generateRandomQuestions(type);
     setquestionBank(randomQuestions); // ← utilise les 65 sélectionnées
     setCurrentQuestion(0);
     setSelectedAnswers({});
@@ -209,7 +211,7 @@ export default function AWSExamApp() {
 
   if (gameState === "start") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 to-blue-50 flex items-center justify-center p-4">
+      <div className="min-h-screen bg-gradient-to-br flex from-orange-50 to-blue-50 flex items-center justify-center p-4">
         <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full text-center">
           <div className="mb-8">
             <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -244,14 +246,20 @@ export default function AWSExamApp() {
               </div>
             </div>
           </div>
+          <div className='flex justify-between'>
 
           <button
-            onClick={startExam}
+            onClick={()=>startExam('Général')}
             className="bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-xl text-xl font-semibold hover:from-orange-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
           >
             Commencer l'examen
           </button>
+            <button onClick={()=>startExam('CAFARCH')} className="bg-gradient-to-r from-orange-500 to-blue-600 text-white px-8 py-4 rounded-xl text-xl font-semibold hover:from-orange-600 hover:to-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg">
+              CAF Architecture
+            </button>
         </div>
+        </div>
+          
       </div>
     );
   }
@@ -644,7 +652,7 @@ export default function AWSExamApp() {
                         </span>
                       </div>
                     </button>
-                    // ...existing code...
+                    // ...existing code...r54
 
                   ))} */}
                   {currentQ.options.map((option, index) => {
