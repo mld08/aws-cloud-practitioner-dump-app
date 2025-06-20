@@ -12,10 +12,11 @@ import {
 import { examQuestions } from "../data/examQuestions3";
 
 const EXAM_DURATION = 90 * 60; // 1 heures en secondes
-const TOTAL_QUESTIONS = 65;
+// const TOTAL_QUESTIONS = 65;
 const PASSING_SCORE = 75;
 
 export default function AWSExamApp() {
+  const [TOTAL_QUESTIONS, setTotalQuestion] = useState(65) ;
   const [gameState, setGameState] = useState("start"); // start, exam, results
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -27,10 +28,11 @@ export default function AWSExamApp() {
 
   // Générer des questions aléatoires
   const generateRandomQuestions = useCallback((type) => {
+    type==='Général' ? setTotalQuestion(65) : setTotalQuestion(20) ;
     console.log(type);
     const shuffled = [...examQuestions].filter(item=>item.domain===type ).sort(() => Math.random() - 0.5);
     console.log(shuffled)
-    return type ==='Général' ? shuffled.slice(0, TOTAL_QUESTIONS) : shuffled.slice(0 ,20) ;
+    return type ==='Général' ? shuffled.slice(0, TOTAL_QUESTIONS) : shuffled.slice(0 ,TOTAL_QUESTIONS) ;
   }, []);
 
   // Flaguer une question
