@@ -30,6 +30,8 @@ export default function AWSExamApp() {
     const shuffled = [...examQuestions].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, TOTAL_QUESTIONS);
   }, []);
+
+  // Flaguer une question
   const flagQ = (currentQ) => {
     setquestionBank((prev) =>
       prev.map((q) => {
@@ -80,13 +82,6 @@ export default function AWSExamApp() {
       .padStart(2, "0")}`;
   };
 
-  // Sélectionner une réponse
-  /*const selectAnswer = (questionId, answerIndex) => {
-    setSelectedAnswers(prev => ({
-      ...prev,
-      [questionId]: answerIndex
-    }));
-  };*/
   // Sélectionner une réponse (supporte plusieurs réponses)
   const selectAnswer = (questionId, answerIndex) => {
     const question = questionBank.find((q) => q.id === questionId);
@@ -263,9 +258,8 @@ export default function AWSExamApp() {
         <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full text-center">
           <div className="mb-8">
             <div
-              className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 ${
-                passed ? "bg-green-100" : "bg-red-100"
-              }`}
+              className={`w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 ${passed ? "bg-green-100" : "bg-red-100"
+                }`}
             >
               {passed ? (
                 <CheckCircle className="w-12 h-12 text-green-600" />
@@ -275,9 +269,8 @@ export default function AWSExamApp() {
             </div>
 
             <h1
-              className={`text-4xl font-bold mb-2 ${
-                passed ? "text-green-600" : "text-red-600"
-              }`}
+              className={`text-4xl font-bold mb-2 ${passed ? "text-green-600" : "text-red-600"
+                }`}
             >
               {passed ? "Félicitations !" : "Échec"}
             </h1>
@@ -298,9 +291,8 @@ export default function AWSExamApp() {
               questions correctes
             </div>
             <div
-              className={`text-sm font-medium ${
-                passed ? "text-green-600" : "text-red-600"
-              }`}
+              className={`text-sm font-medium ${passed ? "text-green-600" : "text-red-600"
+                }`}
             >
               Score requis: {PASSING_SCORE}%
             </div>
@@ -399,13 +391,12 @@ export default function AWSExamApp() {
                       <div key={index} className={className}>
                         <div className="flex items-center space-x-3">
                           <div
-                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                              isCorrect
-                                ? "border-green-500 bg-green-500"
-                                : isSelected
+                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${isCorrect
+                              ? "border-green-500 bg-green-500"
+                              : isSelected
                                 ? "border-red-500 bg-red-500"
                                 : "border-gray-300"
-                            }`}
+                              }`}
                           >
                             {(isSelected || isCorrect) && (
                               <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -483,9 +474,8 @@ export default function AWSExamApp() {
             <div className="flex items-center space-x-2">
               <Clock className="w-5 h-5 text-blue-600" />
               <span
-                className={`font-mono text-lg font-semibold ${
-                  timeLeft < 600 ? "text-red-600" : "text-gray-700"
-                }`}
+                className={`font-mono text-lg font-semibold ${timeLeft < 600 ? "text-red-600" : "text-gray-700"
+                  }`}
               >
                 {formatTime(timeLeft)}
               </span>
@@ -497,14 +487,6 @@ export default function AWSExamApp() {
 
             <div className="text-gray-600">
               Répondues: {answeredCount} / {TOTAL_QUESTIONS}
-            </div>
-            <div className="text-gray-600">
-              <button
-                className="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all"
-                onClick={() => flagQ(currentQ)}
-              >
-                {currentQ?.flagged ? "Unflag" : "Flag"}
-              </button>
             </div>
           </div>
         </div>
@@ -524,7 +506,17 @@ export default function AWSExamApp() {
         {/* Navigation des questions */}
         <div className="lg:col-span-1">
           <div className="bg-white rounded-xl shadow-lg p-4 sticky top-6">
-            <h3 className="font-semibold text-gray-800 mb-4">Navigation</h3>
+            <div className="flex items-center justify-between mb-4 align-middle">
+              <h3 className="font-semibold text-gray-800 mt-3 mb-4">Navigation</h3>
+              <div className="text-gray-600">
+                <button
+                  className="px-1 py-1 bg-gray-300 text-gray-700 rounded-lg hover:bg-gray-200 transition-all"
+                  onClick={() => flagQ(currentQ)}
+                >
+                  {currentQ?.flagged ? "🚫" : "🚩"}
+                </button>
+              </div>
+            </div>
             <div className="grid grid-cols-5 gap-2 mb-4">
               {/* Suppression fonctionnalité Mise en rouge des boutons de navigation */}
               {/* {questionBank.map((_ ,index)=>{
@@ -557,13 +549,12 @@ export default function AWSExamApp() {
                   key={index}
                   onClick={() => goToQuestion(index)}
                   className={`relative w-10 h-10 rounded-lg text-sm font-medium transition-all 
-    ${
-      index === currentQuestion
-        ? "bg-blue-600 text-white shadow-lg"
-        : selectedAnswers[questionBank[index]?.id] !== undefined
-        ? "bg-green-100 text-green-700 hover:bg-green-200"
-        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-    }`}
+    ${index === currentQuestion
+                      ? "bg-blue-600 text-white shadow-lg"
+                      : selectedAnswers[questionBank[index]?.id] !== undefined
+                        ? "bg-green-100 text-green-700 hover:bg-green-200"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    }`}
                 >
                   {index + 1}
 
@@ -656,19 +647,17 @@ export default function AWSExamApp() {
                       <button
                         key={index}
                         onClick={() => selectAnswer(currentQ.id, index)}
-                        className={`w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ${
-                          isSelected
-                            ? "border-blue-500 bg-blue-50 text-blue-800"
-                            : "border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100"
-                        }`}
+                        className={`w-full p-4 text-left rounded-xl border-2 transition-all duration-200 ${isSelected
+                          ? "border-blue-500 bg-blue-50 text-blue-800"
+                          : "border-gray-200 bg-gray-50 hover:border-gray-300 hover:bg-gray-100"
+                          }`}
                       >
                         <div className="flex items-center space-x-3">
                           <div
-                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${
-                              isSelected
-                                ? "border-blue-500 bg-blue-500"
-                                : "border-gray-300"
-                            }`}
+                            className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${isSelected
+                              ? "border-blue-500 bg-blue-500"
+                              : "border-gray-300"
+                              }`}
                           >
                             {isSelected && (
                               <div className="w-2 h-2 bg-white rounded-full"></div>
