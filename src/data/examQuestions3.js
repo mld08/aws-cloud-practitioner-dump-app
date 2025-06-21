@@ -5517,408 +5517,703 @@ export const examQuestions = [
   },
   {
     "id": 1,
-    "question": "Quelle capacité CAF aide à définir les objectifs d'adoption du cloud ?",
-    "options": ["Strategy management", "Portfolio management", "Organizational alignment", "Metrics and KPIs"],
-    "correct": [0],
+    "question": "Combien de perspectives compose le AWS Cloud Adoption Framework (CAF) ?",
+    "options": ["4", "5", "6", "7"],
+    "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 2,
-    "question": "Quel est l’objectif principal de la perspective Business ?",
-    "options": ["Réduire les coûts de l’infrastructure", "Former les équipes aux outils cloud", "Sécuriser les ressources cloud", "Aligner la stratégie métier avec l’adoption du cloud"],
-    "correct": [3],
+    "question": "Quelles sont les six perspectives du AWS CAF ?",
+    "options": ["Business, People, Governance, Platform, Security, Operations", "Business, Technology, Security, Compliance, Finance, Operations", "Strategy, People, Process, Platform, Security, Technology", "Business, Human Resources, Governance, Infrastructure, Security, Management"],
+    "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 3,
-    "question": "Quel KPI serait suivi dans la perspective Business ?",
-    "options": ["Nombre d’instances EC2", "Taux de disponibilité", "ROI d’un projet cloud", "Taux d’accès IAM"],
+    "question": "Quelle perspective CAF se concentre sur l'alignement des investissements IT avec les résultats business ?",
+    "options": ["Governance", "Platform", "Business", "Operations"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 4,
-    "question": "Quel rôle joue le Portfolio management ?",
-    "options": ["Créer des environnements AWS", "Prioriser les initiatives cloud selon leur valeur", "Implémenter des outils DevOps", "Assurer la surveillance des ressources"],
+    "question": "La perspective 'People' du CAF se concentre principalement sur :",
+    "options": ["La gestion des ressources humaines", "Le développement des compétences et la gestion du changement", "La sécurité des utilisateurs", "La gouvernance des accès"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 5,
-    "question": "L’alignement des parties prenantes appartient à :",
-    "options": ["Business", "People", "Governance", "Operations"],
-    "correct": [0],
+    "question": "Quelle perspective CAF établit les politiques et processus pour gérer efficacement les opérations cloud ?",
+    "options": ["Business", "Governance", "Security", "Platform"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 6,
-    "question": "Quel facteur clé est abordé dans Strategy Management ?",
-    "options": ["Alignement stratégique", "Vision d'entreprise", "Gestion des risques", "Suivi budgétaire"],
+    "question": "La perspective 'Platform' du CAF se concentre sur :",
+    "options": ["La sécurité des applications", "L'architecture et les services cloud", "La gestion des coûts", "La formation des équipes"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 7,
-    "question": "Le CAF recommande de suivre les bénéfices métier grâce à :",
-    "options": ["Rapports d'audit", "Plans de formation", "Automatisation", "Des indicateurs de performance métier"],
-    "correct": [3],
+    "question": "Quelle perspective CAF s'occupe de la confidentialité, intégrité et disponibilité des données ?",
+    "options": ["Governance", "Operations", "Security", "Platform"],
+    "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 8,
-    "question": "Le choix d'un fournisseur cloud selon les critères métiers est :",
-    "options": ["Business", "Security", "Platform", "Operations"],
+    "question": "La perspective 'Operations' du CAF garantit que :",
+    "options": ["Les services cloud sont livrés selon les besoins business", "La sécurité est maintenue", "Les coûts sont optimisés", "Les équipes sont formées"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 9,
-    "question": "Une entreprise veut améliorer sa compétitivité via le cloud :",
-    "options": ["Business", "Operations", "People", "Security"],
-    "correct": [0],
+    "question": "AWS CAF aide les organisations à :",
+    "options": ["Réduire les coûts uniquement", "Accélérer la transformation numérique", "Améliorer la sécurité uniquement", "Former les équipes uniquement"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 10,
-    "question": "“Évaluer la proposition de valeur du cloud” relève de :",
-    "options": ["Operations", "People", "Business", "Governance"],
+    "question": "Selon AWS CAF, qu'est-ce qui sous-tend la capacité organisationnelle à exploiter efficacement le cloud ?",
+    "options": ["Un budget suffisant", "Des compétences techniques", "Un ensemble de capacités fondamentales", "Une stratégie marketing"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 11,
-    "question": "Quel est l’objectif principal de la perspective People ?",
-    "options": ["Gérer les compétences et la culture organisationnelle", "Définir des politiques cloud", "Automatiser le déploiement", "Surveiller les incidents"],
-    "correct": [0],
+    "question": "AWS CAF 3.0 a été rendu disponible en :",
+    "options": ["2020", "2021", "2022", "2023"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 12,
-    "question": "“Cloud fluency” signifie :",
-    "options": ["Utiliser les services AWS", "Développer des infrastructures", "Connaissance du cloud par l’ensemble du personnel", "Gestion des coûts"],
+    "question": "Quelle est la principale différence entre AWS CAF et d'autres frameworks de migration ?",
+    "options": ["Il est gratuit", "Il est spécifique à AWS", "Il inclut les meilleures pratiques AWS", "Il est plus simple"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 13,
-    "question": "Quelle capacité relève de la perspective People ?",
-    "options": ["Gestion des risques", "Gestion du portefeuille", "Architecture Cloud", "Organizational change management"],
-    "correct": [3],
+    "question": "Dans le contexte du CAF, que signifie 'transformation numérique' ?",
+    "options": ["Migrer vers le cloud uniquement", "Adopter de nouvelles technologies", "Réinventer les modèles d'affaires avec le cloud", "Digitaliser les processus papier"],
+    "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 14,
-    "question": "Quel plan est essentiel pour l’acculturation cloud ?",
-    "options": ["Plan de déploiement", "Plan de formation", "Plan d’audit", "Plan d’incidents"],
-    "correct": [1],
+    "question": "AWS CAF est basé sur :",
+    "options": ["L'expérience et les meilleures pratiques AWS", "Les standards industriels", "Les certifications ISO", "Les recommandations NIST"],
+    "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 15,
-    "question": "Qui est concerné par “change management” ?",
-    "options": ["Employés et équipes impactés", "Direction financière", "Développeurs uniquement", "Fournisseurs externes"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 16,
-    "question": "Que vise le développement de leadership cloud ?",
-    "options": ["Contrôler les coûts", "Gérer la sécurité", "Accompagner la transformation par des sponsors internes", "Automatiser les tâches"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 17,
-    "question": "Un plan de formation cloud concerne :",
-    "options": ["Governance", "People perspective", "Platform", "Security"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 18,
-    "question": "Exemple de cloud fluency :",
-    "options": ["Les équipes maîtrisent AWS CLI", "Les serveurs sont automatisés", "Les données sont chiffrées", "Les employés comprennent les avantages du cloud"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 19,
-    "question": "Qui porte la transformation dans People ?",
-    "options": ["L’équipe IT uniquement", "Les fournisseurs cloud", "Leadership transversal", "Les utilisateurs finaux"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 20,
-    "question": "L'engagement RH et communication se trouve dans :",
-    "options": ["People", "Operations", "Security", "Business"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 21,
-    "question": "Quel est l’objectif principal de la perspective Governance ?",
-    "options": ["Suivi des incidents", "Gestion des ressources", "Déploiement des applications", "S’assurer que les investissements cloud sont bien gouvernés"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 22,
-    "question": "Quelle capacité concerne la gestion des risques ?",
-    "options": ["Risk Management", "Monitoring", "Automatisation", "Support"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 23,
-    "question": "“Contrôle budgétaire” fait partie de :",
-    "options": ["Security", "Governance", "Operations", "Platform"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 24,
-    "question": "Que permet un cadre de gouvernance ?",
-    "options": ["Automatisation des tâches", "Formation des équipes", "Encadrer l’usage du cloud et prévenir les dérives", "Surveillance des erreurs"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 25,
-    "question": "Quel rôle pour la conformité réglementaire ?",
-    "options": ["Governance", "People", "Platform", "Business"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 26,
-    "question": "Quel outil CAF peut aider pour la gouvernance financière ?",
-    "options": ["AWS CloudTrail", "Amazon EC2", "AWS Lambda", "Cost allocation tags"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 27,
-    "question": "Que contient un plan de gouvernance ?",
-    "options": ["Plans de formation", "Politiques, règles, procédures", "Templates de déploiement", "Scripts d’automatisation"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 28,
-    "question": "Comment CAF recommande de gérer les responsabilités ?",
-    "options": ["Par des rôles définis et des politiques", "Par un chef de projet", "Par un fournisseur externe", "Par la finance uniquement"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 29,
-    "question": "CAF Governance inclut :",
-    "options": ["Portefeuille de services cloud contrôlé", "Formation continue", "Infrastructure as Code", "Gestion des incidents"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 31,
-    "question": "Quel est l’objectif principal de la perspective Platform ?",
-    "options": ["Support utilisateur", "Gestion des coûts", "Concevoir et construire l’environnement technique", "Suivi des incidents"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 32,
-    "question": "CAF Platform traite de :",
-    "options": ["Formation des équipes", "Surveillance des coûts", "Gestion des risques", "Automatisation, infrastructure, outils DevOps"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 33,
-    "question": "Quelle capacité CAF inclut la gestion du réseau ?",
-    "options": ["Infrastructure Management", "Security", "People", "Governance"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 35,
-    "question": "Infrastructure as Code concerne :",
-    "options": ["Security", "Business", "Platform", "People"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 36,
-    "question": "Comment CAF décrit la standardisation de l’environnement ?",
-    "options": ["Formation", "Automatisation", "Templates, outils, automatisation", "Contrôles de sécurité"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 37,
-    "question": "Exemple de capacité Platform :",
-    "options": ["Monitoring", "Workload & Application Management", "Change Management", "Incident Management"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-    {
-    "id": 39,
-    "question": "CAF Platform inclut la gestion de :",
-    "options": ["Architecture Cloud", "Finance", "RH", "Sécurité"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 40,
-    "question": "Plateformes multi-comptes AWS relèvent de :",
-    "options": ["Platform", "People", "Business", "Governance"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 41,
-    "question": "Quel est l’objectif de la perspective Security ?",
-    "options": ["Prévenir, détecter et répondre aux menaces", "Automatiser les tâches", "Déployer les applications", "Gérer les coûts"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 42,
-    "question": "Quelle capacité couvre IAM (Identity and Access Management) ?",
-    "options": ["Infrastructure", "Monitoring", "Access management", "Gestion des coûts"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 43,
-    "question": "Exemple de service pour la Security :",
-    "options": ["Amazon S3", "AWS CloudTrail", "AWS Lambda", "Amazon EC2"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 44,
-    "question": "Quelle perspective CAF gère les audits ?",
-    "options": ["Business", "Governance", "Platform", "Security"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 45,
-    "question": "“Définir une politique de chiffrement” appartient à :",
-    "options": ["Security", "Governance", "People", "Platform"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 46,
-    "question": "Que gère la capacité “Identity and Access Management” ?",
-    "options": ["Gestion des coûts", "Déploiement d’applications", "Qui peut accéder à quoi et comment", "Surveillance des incidents"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 47,
-    "question": "Exemple de contrôle de sécurité :",
-    "options": ["VPN", "MFA pour les comptes AWS", "Automatisation", "Formation"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 49,
-    "question": "CAF Security recommande :",
-    "options": ["Une culture de sécurité dès la conception", "Automatisation", "Suivi budgétaire", "Gestion des ressources"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 50,
-    "question": "Quel élément protège la donnée client ?",
-    "options": ["Surveillance", "Automatisation", "Chiffrement, audit, segmentation", "Formation"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 51,
-    "question": "Quel est l’objectif principal de Operations ?",
-    "options": ["Assurer un fonctionnement stable et résilient", "Automatiser les déploiements", "Gérer les coûts", "Former les équipes"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 52,
-    "question": "Quelle capacité CAF s’occupe de la surveillance ?",
+    "question": "Quelle capacité CAF s'occupe de la surveillance et gestion des événements ?",
     "options": ["Gestion financière", "Déploiement", "Monitoring and Event Management", "Sécurité"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
-    "id": 54,
-    "question": "CAF Operations inclut :",
-    "options": ["Incident Management", "Gestion financière", "Formation", "Automatisation"],
+    "id": 16,
+    "question": "Dans la perspective Business du CAF, on trouve la capacité :",
+    "options": ["Identity and Access Management", "Business Case Development", "Application Architecture", "Incident Response"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 17,
+    "question": "La perspective People inclut la capacité :",
+    "options": ["Data Architecture", "Organizational Change Management", "Network Architecture", "Threat Detection"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 18,
+    "question": "Quelle capacité appartient à la perspective Governance ?",
+    "options": ["Portfolio Management", "Application Development", "Incident Response", "Data Protection"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
-    "id": 57,
-    "question": "“Runbook” fait partie de :",
+    "id": 19,
+    "question": "Dans la perspective Platform, on trouve :",
+    "options": ["Risk Management", "Compute and Networking", "Training", "Budget Management"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 20,
+    "question": "La perspective Security inclut :",
+    "options": ["Change Management", "Data Classification", "Cost Optimization", "Skills Development"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 21,
+    "question": "Quelle capacité fait partie de la perspective Operations ?",
+    "options": ["Business Planning", "Observability", "Identity Management", "Data Architecture"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 22,
+    "question": "AWS CAF aide à identifier et prioriser :",
+    "options": ["Les services AWS", "Les opportunités de transformation", "Les équipes de projet", "Les fournisseurs"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 23,
+    "question": "Le CAF permet d'évaluer et améliorer :",
+    "options": ["La performance des applications", "La préparation au cloud", "Les compétences techniques", "Les processus métier"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 24,
+    "question": "Selon AWS CAF, la transformation cloud doit être :",
+    "options": ["Rapide", "Économique", "Itérative", "Complète"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 25,
+    "question": "AWS CAF s'adresse principalement aux :",
+    "options": ["Développeurs", "Administrateurs système", "Parties prenantes de la transformation", "Équipes de sécurité"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 26,
+    "question": "Dans le contexte CAF, qu'est-ce qu'une 'capability' ?",
+    "options": ["Un service AWS", "Une compétence fonctionnelle", "Une certification", "Un processus métier"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 27,
+    "question": "AWS CAF recommande de commencer par :",
+    "options": ["La migration technique", "L'évaluation de la préparation", "La formation des équipes", "L'achat de services"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 28,
+    "question": "Quelle perspective CAF implique les 'Site Reliability Engineers' ?",
     "options": ["Business", "Security", "Operations", "Platform"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
-    "id": 58,
-    "question": "Comment CAF assure la continuité ?",
-    "options": ["Plans de reprise d’activité", "Automatisation", "Formation", "Surveillance"],
+    "id": 29,
+    "question": "La perspective Business du CAF concerne :",
+    "options": ["Les aspects techniques", "L'alignement IT-Business", "La sécurité", "Les opérations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 30,
+    "question": "AWS CAF Value Benchmarking montre une réduction du time-to-market de :",
+    "options": ["25%", "37%", "45%", "50%"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 31,
+    "question": "Selon AWS CAF, l'augmentation de la fréquence de déploiement de code est de :",
+    "options": ["200%", "342%", "400%", "500%"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 32,
+    "question": "AWS CAF aide à réduire les risques :",
+    "options": ["Techniques uniquement", "Business uniquement", "Techniques et business", "Financiers uniquement"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 33,
+    "question": "Dans AWS CAF, ESG signifie :",
+    "options": ["Enterprise Security Governance", "Environmental, Social, and Governance", "Elastic Security Group", "Enhanced Service Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 34,
+    "question": "AWS CAF-AI est une extension pour :",
+    "options": ["L'intelligence artificielle", "L'automatisation", "L'architecture", "L'analyse"],
     "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 35,
+    "question": "Le framework CAF peut être utilisé :",
+    "options": ["Une seule fois", "À tout moment du parcours cloud", "Seulement au début", "Seulement à la fin"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 36,
+    "question": "AWS CAF aide à développer une feuille de route pour :",
+    "options": ["Les produits", "La transformation", "Les équipes", "Les budgets"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 37,
+    "question": "Quelle est la version actuelle d'AWS CAF ?",
+    "options": ["2.0", "3.0", "4.0", "5.0"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 38,
+    "question": "AWS CAF s'appuie sur l'expérience de :",
+    "options": ["Centaines de clients", "Milliers de clients", "Millions de clients", "Quelques clients"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 39,
+    "question": "Dans le CAF, la maturité organisationnelle est mesurée par :",
+    "options": ["Le nombre d'employés", "Les capacités fondamentales", "Le budget IT", "Le nombre de projets"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 40,
+    "question": "AWS CAF recommande une approche :",
+    "options": ["Séquentielle", "Parallèle", "Holistique", "Fragmentée"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 41,
+    "question": "La perspective Platform du CAF inclut :",
+    "options": ["Les politiques de sécurité", "L'architecture de données", "La gestion des changements", "La formation"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 42,
+    "question": "AWS CAF définit les rôles et responsabilités pour :",
+    "options": ["Les développeurs uniquement", "Les parties prenantes fonctionnelles", "Les managers uniquement", "Les clients uniquement"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 43,
+    "question": "Le CAF aide à établir des métriques pour :",
+    "options": ["Les performances techniques", "Les résultats business", "Les coûts", "Tous les aspects"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 44,
+    "question": "AWS CAF est particulièrement utile pour :",
+    "options": ["Les petites entreprises", "Les grandes entreprises", "Toutes les organisations", "Les startups"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 45,
+    "question": "Dans le contexte CAF, la 'cloud readiness' fait référence à :",
+    "options": ["Les compétences techniques", "La préparation organisationnelle", "Le budget disponible", "L'infrastructure existante"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 46,
+    "question": "AWS CAF encourage l'adoption de :",
+    "options": ["Services AWS uniquement", "Meilleures pratiques cloud", "Technologies open source", "Solutions propriétaires"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 47,
+    "question": "La perspective Governance du CAF établit :",
+    "options": ["Les architectures techniques", "Les cadres de conformité", "Les processus de développement", "Les stratégies marketing"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 48,
+    "question": "AWS CAF aide à améliorer :",
+    "options": ["L'efficacité opérationnelle", "Les revenus", "La performance ESG", "Tous les précédents"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 49,
+    "question": "Dans AWS CAF, les 'transformation domains' sont :",
+    "options": ["Des services AWS", "Des domaines d'activité", "Des domaines de transformation", "Des équipes projet"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 50,
+    "question": "AWS CAF fournit des conseils structurés pour :",
+    "options": ["Choisir les services AWS", "Planifier la transformation numérique", "Former les équipes", "Gérer les budgets"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+
+  {
+    "id": 51,
+    "question": "Combien de domaines de transformation AWS CAF définit-il ?",
+    "options": ["3", "4", "5", "6"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 52,
+    "question": "Quels sont les quatre domaines de transformation du AWS CAF ?",
+    "options": ["Technology, Process, Organization, Product", "Business, Security, Platform, Operations", "People, Governance, Technology, Security", "Infrastructure, Applications, Data, Security"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 53,
+    "question": "Le domaine de transformation 'Technology' concerne principalement :",
+    "options": ["La formation des équipes", "La migration et modernisation de l'infrastructure", "La gestion des processus", "Le développement produit"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 54,
+    "question": "Le domaine de transformation 'Process' vise à :",
+    "options": ["Moderniser les applications", "Digitaliser et automatiser les opérations business", "Former les équipes", "Sécuriser les données"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 55,
+    "question": "Dans AWS CAF, le domaine 'Organization' se concentre sur :",
+    "options": ["L'architecture technique", "La structure organisationnelle et la culture", "Les processus métier", "Les produits"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 56,
+    "question": "Le domaine de transformation 'Product' dans AWS CAF concerne :",
+    "options": ["Les services AWS", "La création de nouveaux modèles d'affaires", "Les équipes de développement", "L'infrastructure"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 57,
+    "question": "AWS CAF recommande une approche itérative pour :",
+    "options": ["Réduire les coûts", "Évoluer progressivement la feuille de route", "Accélérer la migration", "Former les équipes"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 58,
+    "question": "Dans la perspective Business, la capacité 'Business Case Development' permet de :",
+    "options": ["Développer des applications", "Justifier les investissements cloud", "Former les équipes", "Gérer la sécurité"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 59,
-    "question": "CAF recommande d’avoir des :",
-    "options": ["Plans de formation", "Indicateurs de performance opérationnelle", "Budgets", "Politiques"],
-    "correct": [1],
+    "question": "La capacité 'Portfolio Management' appartient à quelle perspective CAF ?",
+    "options": ["Platform", "Governance", "Business", "Operations"],
+    "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 60,
-    "question": "Quel est le rôle du feedback dans CAF ?",
-    "options": ["Amélioration continue", "Gestion des coûts", "Surveillance", "Automatisation"],
-    "correct": [0],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 61,
-    "question": "Une entreprise veut former ses équipes, automatiser le déploiement, et sécuriser les accès :",
-    "options": ["Business", "People, Platform, Security", "Governance", "Operations"],
+    "question": "AWS CAF définit la 'cloud readiness' comme :",
+    "options": ["La disponibilité des services", "La maturité organisationnelle pour le cloud", "La connectivité réseau", "Le budget disponible"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
+    "id": 61,
+    "question": "Dans la perspective People, quelle capacité gère les compétences ?",
+    "options": ["Training", "Culture Evolution", "Organizational Alignment", "Workforce Transformation"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
     "id": 62,
-    "question": "Mettre en place un suivi des coûts cloud :",
-    "options": ["Security", "Governance", "People", "Platform"],
+    "question": "La capacité 'Application Portfolio Management' relève de :",
+    "options": ["Business", "Governance", "Platform", "Security"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 63,
-    "question": "Changer la culture interne :",
-    "options": ["People", "Platform", "Business", "Operations"],
-    "correct": [0],
+    "question": "AWS CAF 'Cloud Financial Management' aide à :",
+    "options": ["Réduire les coûts uniquement", "Optimiser la valeur financière du cloud", "Gérer les budgets IT", "Comptabiliser les dépenses"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 64,
-    "question": "Définir les architectures techniques pour plusieurs services :",
-    "options": ["Business", "People", "Governance", "Platform"],
-    "correct": [3],
+    "question": "Dans AWS CAF, les 'stakeholders' fonctionnels sont :",
+    "options": ["Uniquement les développeurs", "Les parties prenantes de chaque perspective", "Les managers uniquement", "Les clients"],
+    "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 65,
-    "question": "Mesurer l’impact business après la migration cloud :",
-    "options": ["Business", "Operations", "Security", "People"],
+    "question": "AWS CAF recommande de mesurer le succès avec :",
+    "options": ["Des métriques techniques", "Des KPIs business", "Des indicateurs de coûts", "Tous les précédents"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 66,
+    "question": "La perspective Security du CAF inclut la capacité :",
+    "options": ["Network Architecture", "Identity and Access Management", "Cost Optimization", "Change Management"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 67,
+    "question": "Dans AWS CAF, 'Data Protection' fait partie de :",
+    "options": ["Platform", "Security", "Governance", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 68,
+    "question": "La capacité 'Threat Detection' appartient à la perspective :",
+    "options": ["Operations", "Security", "Platform", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 69,
+    "question": "AWS CAF 'Incident Response' est une capacité de :",
+    "options": ["Operations", "Security", "Platform", "Business"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 70,
+    "question": "Dans la perspective Platform, on trouve :",
+    "options": ["Business Planning", "Compute and Networking", "Risk Management", "Training"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 71,
+    "question": "La capacité 'Data Architecture' relève de :",
+    "options": ["Security", "Platform", "Governance", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 72,
+    "question": "AWS CAF 'Application Architecture' fait partie de :",
+    "options": ["Business", "Platform", "Security", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 73,
+    "question": "Dans la perspective Operations, la capacité 'Observability' concerne :",
+    "options": ["La surveillance et le monitoring", "La gestion des coûts", "La sécurité", "La formation"],
     "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 74,
+    "question": "AWS CAF 'Event Management' appartient à :",
+    "options": ["Security", "Operations", "Platform", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 75,
+    "question": "La capacité 'Service Delivery' fait partie de :",
+    "options": ["Business", "Operations", "Platform", "Security"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 76,
+    "question": "AWS CAF définit combien de phases principales dans le parcours cloud ?",
+    "options": ["2", "3", "4", "5"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 77,
+    "question": "Dans AWS CAF, la phase 'Envision' consiste à :",
+    "options": ["Migrer les applications", "Définir la vision et les objectifs", "Former les équipes", "Déployer l'infrastructure"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 78,
+    "question": "La phase 'Align' du CAF vise à :",
+    "options": ["Identifier les lacunes et créer un plan", "Exécuter la migration", "Optimiser les performances", "Former les utilisateurs"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 79,
+    "question": "AWS CAF phase 'Launch' se concentre sur :",
+    "options": ["La planification", "L'exécution pilote", "La formation", "L'évaluation"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 80,
+    "question": "La phase 'Scale' dans AWS CAF implique :",
+    "options": ["Réduire les coûts", "Étendre les succès à l'organisation", "Former plus d'équipes", "Améliorer la sécurité"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 81,
+    "question": "AWS CAF Value Benchmarking indique une amélioration de la productivité des équipes de :",
+    "options": ["15%", "25%", "34%", "50%"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 82,
+    "question": "Selon AWS CAF, l'amélioration de l'efficacité opérationnelle est de :",
+    "options": ["20%", "35%", "43%", "60%"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 83,
+    "question": "AWS CAF aide à réduire les risques de sécurité de :",
+    "options": ["25%", "40%", "69%", "80%"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 84,
+    "question": "Dans AWS CAF, 'ESG outcomes' fait référence à :",
+    "options": ["Enterprise Security Governance", "Environmental, Social, and Governance", "Enhanced Service Governance", "Elastic Security Group"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 85,
+    "question": "AWS CAF-AI est conçu pour :",
+    "options": ["L'automatisation", "L'adoption de l'intelligence artificielle", "L'architecture", "L'analyse"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 86,
+    "question": "La perspective Governance du CAF établit des mécanismes pour :",
+    "options": ["Développer des applications", "Mesurer et surveiller les résultats", "Former les équipes", "Migrer les données"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 87,
+    "question": "AWS CAF 'Risk Management' appartient à la perspective :",
+    "options": ["Security", "Governance", "Operations", "Business"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 88,
+    "question": "Dans AWS CAF, 'Change Acceleration' fait partie de :",
+    "options": ["People", "Business", "Governance", "Operations"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 89,
+    "question": "La capacité 'Organizational Design' relève de :",
+    "options": ["Business", "People", "Governance", "Platform"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 90,
+    "question": "AWS CAF recommande d'évaluer la maturité organisationnelle :",
+    "options": ["Une seule fois", "Régulièrement", "À la fin du projet", "Jamais"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 91,
+    "question": "Dans AWS CAF, les 'foundational capabilities' sont :",
+    "options": ["Des services AWS", "Des compétences de base", "Des outils", "Des processus"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 92,
+    "question": "AWS CAF 'Network Architecture' appartient à :",
+    "options": ["Security", "Platform", "Operations", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 93,
+    "question": "La capacité 'Modern Application Development' fait partie de :",
+    "options": ["Business", "Platform", "Security", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 94,
+    "question": "AWS CAF 'CI/CD' (Continuous Integration/Continuous Deployment) relève de :",
+    "options": ["Operations", "Platform", "Security", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 95,
+    "question": "Dans AWS CAF, 'Infrastructure Protection' appartient à :",
+    "options": ["Platform", "Security", "Operations", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 96,
+    "question": "La capacité 'Vulnerability Management' fait partie de :",
+    "options": ["Operations", "Security", "Platform", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 97,
+    "question": "AWS CAF 'Service Management' appartient à :",
+    "options": ["Business", "Operations", "Platform", "Security"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 98,
+    "question": "Dans AWS CAF, 'Configuration Management' relève de :",
+    "options": ["Security", "Operations", "Platform", "Governance"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 99,
+    "question": "AWS CAF aide les organisations à atteindre leurs objectifs :",
+    "options": ["Techniques uniquement", "Financiers uniquement", "Business et techniques", "Opérationnels uniquement"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 100,
+    "question": "L'objectif principal d'AWS CAF est :",
+    "options": ["Réduire les coûts", "Accélérer la transformation numérique", "Améliorer la sécurité", "Former les équipes"],
+    "correct": [1],
     "domain": "CAFARCH"
   }
   
