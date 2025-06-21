@@ -31,7 +31,9 @@ export default function AWSExamApp() {
     type==='Général' ? setTotalQuestion(65) : setTotalQuestion(20) ;
     const shuffled = [...examQuestions].filter(item=>item.domain===type ).sort(() => Math.random() - 0.5);
     console.log(shuffled)
-    return type ==='Général' ? shuffled.slice(0, TOTAL_QUESTIONS) : shuffled.slice(0 ,TOTAL_QUESTIONS) ;
+    // console.log(TOTAL_QUESTIONS)
+    if (type ==='CAFARCH') return shuffled.slice(0, 20) ; 
+    return shuffled.slice(0, TOTAL_QUESTIONS) 
   }, []);
 
   // Flaguer une question
