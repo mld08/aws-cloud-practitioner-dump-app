@@ -1944,34 +1944,6 @@ export const examQuestions = [
     "domain": "Général"
   },
   {
-    "id": 136,
-    "question": "Quelle option constitue un avantage de l’utilisation d’AWS pour le cloud computing ?",
-    "options": [
-      "Échangez les dépenses variables contre des dépenses fixes",
-      "Tarification à l'utilisation",
-      "Diminution de la vitesse et de l'agilité",
-      "Dépenser de l'argent pour gérer et entretenir des centres de données"
-    ],
-    "correct": [
-      1
-    ],
-    "domain": "Général"
-  },
-  {
-    "id": 137,
-    "question": "Quelle option est une capacité de perspective commerciale AWS Cloud Adoption Framework (AWS CAF) ?",
-    "options": [
-      "Évolution de la culture",
-      "Gestion d'événements",
-      "Monétisation des données",
-      "Architecture de la plateforme"
-    ],
-    "correct": [
-      2
-    ],
-    "domain": "Général"
-  },
-  {
     "id": 138,
     "question": "Une entreprise évalue son offre AWS Business Support afin de déterminer si elle répond toujours à ses besoins. Elle envisage de passer à AWS Enterprise Support. Quels avantages supplémentaires bénéficiera-t-elle de ce service ?",
     "options": [
