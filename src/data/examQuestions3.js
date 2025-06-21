@@ -5541,5 +5541,313 @@ export const examQuestions = [
       0
     ],
     "domain": "Général"
-  }
+  },
+  {
+    "id": 1,
+    "question": "Quelle perspective AWS CAF aide à aligner les investissements cloud avec les objectifs métiers ?",
+    "options": ["Business", "People", "Security", "Operations"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 2,
+    "question": "Quelle perspective AWS CAF se concentre sur la culture, les compétences et la formation des équipes ?",
+    "options": ["People", "Governance", "Platform", "Security"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 3,
+    "question": "Combien de piliers comporte le AWS Well‑Architected Framework ? (Choisissez une réponse)",
+    "options": ["4", "5", "6", "7"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 4,
+    "question": "Le pilier 'Fiablité' du Framework traite de :",
+    "options": [
+      "Protection des données",
+      "Capacité à récupérer et à s'adapter aux charges",
+      "Réduction des coûts",
+      "Performance des requêtes"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 5,
+    "question": "Quel pilier du Well‑Architected Framework met l'accent sur l'automatisation et l'amélioration continue des opérations ?",
+    "options": ["Security", "Operational Excellence", "Performance Efficiency", "Cost Optimization"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 6,
+    "question": "Quel pilier AWS CAF traite de la gouvernance, conformité et gestion des risques ?",
+    "options": ["Governance", "Platform", "Security", "People"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 7,
+    "question": "Le pilier 'Cost Optimization' du Framework vise à :",
+    "options": [
+      "Garantir la sécurité",
+      "Minimiser les coûts et maximiser la valeur",
+      "Optimiser les performances",
+      "Améliorer la durabilité"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 8,
+    "question": "Selon AWS CAF, la perspective Platform porte principalement sur :",
+    "options": [
+      "Les processus RH",
+      "La fiabilité, l'automatisation et l'infrastructure",
+      "La stratégie financière",
+      "La gouvernance"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 9,
+    "question": "Le pilier 'Performance Efficiency' se concentre sur :",
+    "options": [
+      "L'optimisation des coûts",
+      "La performance à l'échelle",
+      "La surveillance",
+      "La sécurité"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 10,
+    "question": "Quel pilier du Well‑Architected Framework s'occupe de la durabilité et de l'impact environnemental ?",
+    "options": [
+      "Operational Excellence",
+      "Security",
+      "Sustainability",
+      "Reliability"
+    ],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 21,
+    "question": "Le pilier 'Operational Excellence' du AWS Well-Architected Framework se concentre sur :",
+    "options": [
+      "La gestion des coûts",
+      "La sécurité des données",
+      "La performance des applications",
+      "La gestion efficace des opérations"
+    ],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 22,
+    "question": "Quel est l'objectif principal du pilier 'Security' dans le AWS Well-Architected Framework ?",
+    "options": [
+      "Protéger les données et les systèmes",
+      "Optimiser les coûts",
+      "Améliorer la performance",
+      "Assurer la durabilité"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 23,
+    "question": "Le pilier 'Reliability' du AWS Well-Architected Framework se concentre sur :",
+    "options": [
+      "La gestion des coûts",
+      "La performance des applications",
+      "La capacité à se remettre des pannes",
+      "La sécurité des données"
+    ],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 24,
+    "question": "Quel est l'objectif principal du pilier 'Performance Efficiency' dans le AWS Well-Architected Framework ?",
+    "options": [
+      "Optimiser les coûts",
+      "Utiliser les ressources informatiques de manière efficace",
+      "Assurer la sécurité des données",
+      "Améliorer la résilience"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 25,
+    "question": "Le pilier 'Cost Optimization' du AWS Well-Architected Framework se concentre sur :",
+    "options": [
+      "Réduire les coûts tout en maximisant la valeur",
+      "Améliorer la performance",
+      "Assurer la sécurité des données",
+      "Augmenter la résilience"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 26,
+    "question": "Quel est l'objectif principal du pilier 'Sustainability' dans le AWS Well-Architected Framework ?",
+    "options": [
+      "Réduire l'impact environnemental",
+      "Optimiser les coûts",
+      "Améliorer la performance",
+      "Assurer la sécurité des données"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 27,
+    "question": "Le pilier 'Operational Excellence' inclut la capacité à :",
+    "options": [
+      "Gérer les coûts",
+      "Supporter le développement et exécuter les charges de travail efficacement",
+      "Optimiser les performances",
+      "Assurer la sécurité des données"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 28,
+    "question": "Le pilier 'Security' inclut la capacité à :",
+    "options": [
+      "Protéger les données, les systèmes et les actifs",
+      "Optimiser les coûts",
+      "Améliorer la performance",
+      "Assurer la durabilité"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 29,
+    "question": "Le pilier 'Reliability' inclut la capacité à :",
+    "options": [
+      "Gérer les coûts",
+      "Effectuer les charges de travail comme prévu",
+      "Optimiser les performances",
+      "Assurer la sécurité des données"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 30,
+    "question": "Le pilier 'Performance Efficiency' inclut la capacité à :",
+    "options": [
+      "Utiliser les ressources informatiques efficacement",
+      "Gérer les coûts",
+      "Assurer la sécurité des données",
+      "Augmenter la résilience"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 11,
+    "question": "Laquelle des perspectives AWS CAF se concentre sur la gestion des risques et la conformité ?",
+    "options": ["Business", "People", "Governance", "Platform"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 12,
+    "question": "Quel rôle la perspective 'People' du AWS CAF joue-t-elle dans l'adoption du cloud ?",
+    "options": [
+      "Automatiser les processus",
+      "Former et structurer les équipes",
+      "Gérer les coûts",
+      "Assurer la sécurité"
+    ],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 13,
+    "question": "Laquelle des perspectives AWS CAF est responsable de la conception de l'infrastructure technique ?",
+    "options": ["Governance", "Platform", "Security", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 14,
+    "question": "Selon AWS CAF, qui est principalement responsable de la perspective 'Governance' ?",
+    "options": ["Les équipes de développement", "Les équipes de sécurité", "Les équipes de direction", "Les architectes cloud"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 15,
+    "question": "Laquelle des perspectives AWS CAF se concentre sur l'automatisation et l'efficacité opérationnelle ?",
+    "options": ["People", "Governance", "Platform", "Operations"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 16,
+    "question": "Quel est l'objectif principal de la perspective 'Business' du AWS CAF ?",
+    "options": [
+      "Aligner les investissements cloud avec les objectifs commerciaux",
+      "Former les équipes",
+      "Gérer l'infrastructure",
+      "Assurer la sécurité des données"
+    ],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 17,
+    "question": "La perspective 'Security' du AWS CAF se concentre sur :",
+    "options": [
+      "La gestion des risques",
+      "La conformité réglementaire",
+      "La protection des données et des systèmes",
+      "La formation des employés"
+    ],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 18,
+    "question": "Quel est le rôle de la perspective 'Platform' dans le AWS CAF ?",
+    "options": [
+      "Gérer les finances",
+      "Former les équipes",
+      "Concevoir l'infrastructure technique",
+      "Assurer la sécurité"
+    ],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 19,
+    "question": "Laquelle des perspectives AWS CAF est responsable de la gestion des opérations quotidiennes ?",
+    "options": ["Business", "People", "Governance", "Operations"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 20,
+    "question": "Selon AWS CAF, qui est principalement responsable de la perspective 'People' ?",
+    "options": ["Les équipes de développement", "Les équipes de sécurité", "Les équipes de direction", "Les équipes RH"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+
+
+  
 ]
