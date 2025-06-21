@@ -5517,310 +5517,409 @@ export const examQuestions = [
   },
   {
     "id": 1,
-    "question": "Quelle perspective AWS CAF aide à aligner les investissements cloud avec les objectifs métiers ?",
-    "options": ["Business", "People", "Security", "Operations"],
+    "question": "Quelle capacité CAF aide à définir les objectifs d'adoption du cloud ?",
+    "options": ["Strategy management", "Portfolio management", "Organizational alignment", "Metrics and KPIs"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 2,
-    "question": "Quelle perspective AWS CAF se concentre sur la culture, les compétences et la formation des équipes ?",
-    "options": ["People", "Governance", "Platform", "Security"],
-    "correct": [0],
+    "question": "Quel est l’objectif principal de la perspective Business ?",
+    "options": ["Réduire les coûts de l’infrastructure", "Former les équipes aux outils cloud", "Sécuriser les ressources cloud", "Aligner la stratégie métier avec l’adoption du cloud"],
+    "correct": [3],
     "domain": "CAFARCH"
   },
   {
     "id": 3,
-    "question": "Combien de piliers comporte le AWS Well‑Architected Framework ? (Choisissez une réponse)",
-    "options": ["4", "5", "6", "7"],
+    "question": "Quel KPI serait suivi dans la perspective Business ?",
+    "options": ["Nombre d’instances EC2", "Taux de disponibilité", "ROI d’un projet cloud", "Taux d’accès IAM"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
     "id": 4,
-    "question": "Le pilier 'Reliability' du Framework traite de :",
-    "options": [
-      "Protection des données",
-      "Capacité à récupérer et à s'adapter aux charges",
-      "Réduction des coûts",
-      "Performance des requêtes"
-    ],
+    "question": "Quel rôle joue le Portfolio management ?",
+    "options": ["Créer des environnements AWS", "Prioriser les initiatives cloud selon leur valeur", "Implémenter des outils DevOps", "Assurer la surveillance des ressources"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 5,
-    "question": "Quel pilier du Well‑Architected Framework met l'accent sur l'automatisation et l'amélioration continue des opérations ?",
-    "options": ["Security", "Operational Excellence", "Performance Efficiency", "Cost Optimization"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 6,
-    "question": "Quel pilier AWS CAF traite de la gouvernance, conformité et gestion des risques ?",
-    "options": ["Governance", "Platform", "Security", "People"],
+    "question": "L’alignement des parties prenantes appartient à :",
+    "options": ["Business", "People", "Governance", "Operations"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
-    "id": 7,
-    "question": "Le pilier 'Cost Optimization' du Framework vise à :",
-    "options": [
-      "Garantir la sécurité",
-      "Minimiser les coûts et maximiser la valeur",
-      "Optimiser les performances",
-      "Améliorer la durabilité"
-    ],
+    "id": 6,
+    "question": "Quel facteur clé est abordé dans Strategy Management ?",
+    "options": ["Alignement stratégique", "Vision d'entreprise", "Gestion des risques", "Suivi budgétaire"],
     "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 7,
+    "question": "Le CAF recommande de suivre les bénéfices métier grâce à :",
+    "options": ["Rapports d'audit", "Plans de formation", "Automatisation", "Des indicateurs de performance métier"],
+    "correct": [3],
     "domain": "CAFARCH"
   },
   {
     "id": 8,
-    "question": "Selon AWS CAF, la perspective Platform porte principalement sur :",
-    "options": [
-      "Les processus RH",
-      "La fiabilité, l'automatisation et l'infrastructure",
-      "La stratégie financière",
-      "La gouvernance"
-    ],
-    "correct": [1],
+    "question": "Le choix d'un fournisseur cloud selon les critères métiers est :",
+    "options": ["Business", "Security", "Platform", "Operations"],
+    "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 9,
-    "question": "Le pilier 'Performance Efficiency' se concentre sur :",
-    "options": [
-      "L'optimisation des coûts",
-      "La performance à l'échelle",
-      "La surveillance",
-      "La sécurité"
-    ],
-    "correct": [1],
+    "question": "Une entreprise veut améliorer sa compétitivité via le cloud :",
+    "options": ["Business", "Operations", "People", "Security"],
+    "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 10,
-    "question": "Quel pilier du Well‑Architected Framework s'occupe de la durabilité et de l'impact environnemental ?",
-    "options": [
-      "Operational Excellence",
-      "Security",
-      "Sustainability",
-      "Reliability"
-    ],
+    "question": "“Évaluer la proposition de valeur du cloud” relève de :",
+    "options": ["Operations", "People", "Business", "Governance"],
     "correct": [2],
     "domain": "CAFARCH"
   },
   {
+    "id": 11,
+    "question": "Quel est l’objectif principal de la perspective People ?",
+    "options": ["Gérer les compétences et la culture organisationnelle", "Définir des politiques cloud", "Automatiser le déploiement", "Surveiller les incidents"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 12,
+    "question": "“Cloud fluency” signifie :",
+    "options": ["Utiliser les services AWS", "Développer des infrastructures", "Connaissance du cloud par l’ensemble du personnel", "Gestion des coûts"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 13,
+    "question": "Quelle capacité relève de la perspective People ?",
+    "options": ["Gestion des risques", "Gestion du portefeuille", "Architecture Cloud", "Organizational change management"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 14,
+    "question": "Quel plan est essentiel pour l’acculturation cloud ?",
+    "options": ["Plan de déploiement", "Plan de formation", "Plan d’audit", "Plan d’incidents"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 15,
+    "question": "Qui est concerné par “change management” ?",
+    "options": ["Employés et équipes impactés", "Direction financière", "Développeurs uniquement", "Fournisseurs externes"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 16,
+    "question": "Que vise le développement de leadership cloud ?",
+    "options": ["Contrôler les coûts", "Gérer la sécurité", "Accompagner la transformation par des sponsors internes", "Automatiser les tâches"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 17,
+    "question": "Un plan de formation cloud concerne :",
+    "options": ["Governance", "People perspective", "Platform", "Security"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 18,
+    "question": "Exemple de cloud fluency :",
+    "options": ["Les équipes maîtrisent AWS CLI", "Les serveurs sont automatisés", "Les données sont chiffrées", "Les employés comprennent les avantages du cloud"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 19,
+    "question": "Qui porte la transformation dans People ?",
+    "options": ["L’équipe IT uniquement", "Les fournisseurs cloud", "Leadership transversal", "Les utilisateurs finaux"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 20,
+    "question": "L'engagement RH et communication se trouve dans :",
+    "options": ["People", "Operations", "Security", "Business"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
     "id": 21,
-    "question": "Le pilier 'Operational Excellence' du AWS Well-Architected Framework se concentre sur :",
-    "options": [
-      "La gestion des coûts",
-      "La sécurité des données",
-      "La performance des applications",
-      "La gestion efficace des opérations"
-    ],
+    "question": "Quel est l’objectif principal de la perspective Governance ?",
+    "options": ["Suivi des incidents", "Gestion des ressources", "Déploiement des applications", "S’assurer que les investissements cloud sont bien gouvernés"],
     "correct": [3],
     "domain": "CAFARCH"
   },
   {
     "id": 22,
-    "question": "Quel est l'objectif principal du pilier 'Security' dans le AWS Well-Architected Framework ?",
-    "options": [
-      "Protéger les données et les systèmes",
-      "Optimiser les coûts",
-      "Améliorer la performance",
-      "Assurer la durabilité"
-    ],
+    "question": "Quelle capacité concerne la gestion des risques ?",
+    "options": ["Risk Management", "Monitoring", "Automatisation", "Support"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 23,
-    "question": "Le pilier 'Reliability' du AWS Well-Architected Framework se concentre sur :",
-    "options": [
-      "La gestion des coûts",
-      "La performance des applications",
-      "La capacité à se remettre des pannes",
-      "La sécurité des données"
-    ],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 24,
-    "question": "Quel est l'objectif principal du pilier 'Performance Efficiency' dans le AWS Well-Architected Framework ?",
-    "options": [
-      "Optimiser les coûts",
-      "Utiliser les ressources informatiques de manière efficace",
-      "Assurer la sécurité des données",
-      "Améliorer la résilience"
-    ],
+    "question": "“Contrôle budgétaire” fait partie de :",
+    "options": ["Security", "Governance", "Operations", "Platform"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
+    "id": 24,
+    "question": "Que permet un cadre de gouvernance ?",
+    "options": ["Automatisation des tâches", "Formation des équipes", "Encadrer l’usage du cloud et prévenir les dérives", "Surveillance des erreurs"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
     "id": 25,
-    "question": "Le pilier 'Cost Optimization' du AWS Well-Architected Framework se concentre sur :",
-    "options": [
-      "Réduire les coûts tout en maximisant la valeur",
-      "Améliorer la performance",
-      "Assurer la sécurité des données",
-      "Augmenter la résilience"
-    ],
+    "question": "Quel rôle pour la conformité réglementaire ?",
+    "options": ["Governance", "People", "Platform", "Business"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 26,
-    "question": "Quel est l'objectif principal du pilier 'Sustainability' dans le AWS Well-Architected Framework ?",
-    "options": [
-      "Réduire l'impact environnemental",
-      "Optimiser les coûts",
-      "Améliorer la performance",
-      "Assurer la sécurité des données"
-    ],
-    "correct": [0],
+    "question": "Quel outil CAF peut aider pour la gouvernance financière ?",
+    "options": ["AWS CloudTrail", "Amazon EC2", "AWS Lambda", "Cost allocation tags"],
+    "correct": [3],
     "domain": "CAFARCH"
   },
   {
     "id": 27,
-    "question": "Le pilier 'Operational Excellence' inclut la capacité à :",
-    "options": [
-      "Gérer les coûts",
-      "Supporter le développement et exécuter les charges de travail efficacement",
-      "Optimiser les performances",
-      "Assurer la sécurité des données"
-    ],
+    "question": "Que contient un plan de gouvernance ?",
+    "options": ["Plans de formation", "Politiques, règles, procédures", "Templates de déploiement", "Scripts d’automatisation"],
     "correct": [1],
     "domain": "CAFARCH"
   },
   {
     "id": 28,
-    "question": "Le pilier 'Security' inclut la capacité à :",
-    "options": [
-      "Protéger les données, les systèmes et les actifs",
-      "Optimiser les coûts",
-      "Améliorer la performance",
-      "Assurer la durabilité"
-    ],
+    "question": "Comment CAF recommande de gérer les responsabilités ?",
+    "options": ["Par des rôles définis et des politiques", "Par un chef de projet", "Par un fournisseur externe", "Par la finance uniquement"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
     "id": 29,
-    "question": "Le pilier 'Reliability' inclut la capacité à :",
-    "options": [
-      "Gérer les coûts",
-      "Effectuer les charges de travail comme prévu",
-      "Optimiser les performances",
-      "Assurer la sécurité des données"
-    ],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 30,
-    "question": "Le pilier 'Performance Efficiency' inclut la capacité à :",
-    "options": [
-      "Utiliser les ressources informatiques efficacement",
-      "Gérer les coûts",
-      "Assurer la sécurité des données",
-      "Augmenter la résilience"
-    ],
+    "question": "CAF Governance inclut :",
+    "options": ["Portefeuille de services cloud contrôlé", "Formation continue", "Infrastructure as Code", "Gestion des incidents"],
     "correct": [0],
     "domain": "CAFARCH"
   },
   {
-    "id": 11,
-    "question": "Laquelle des perspectives AWS CAF se concentre sur la gestion des risques et la conformité ?",
+    "id": 31,
+    "question": "Quel est l’objectif principal de la perspective Platform ?",
+    "options": ["Support utilisateur", "Gestion des coûts", "Concevoir et construire l’environnement technique", "Suivi des incidents"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 32,
+    "question": "CAF Platform traite de :",
+    "options": ["Formation des équipes", "Surveillance des coûts", "Gestion des risques", "Automatisation, infrastructure, outils DevOps"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 33,
+    "question": "Quelle capacité CAF inclut la gestion du réseau ?",
+    "options": ["Infrastructure Management", "Security", "People", "Governance"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 35,
+    "question": "Infrastructure as Code concerne :",
+    "options": ["Security", "Business", "Platform", "People"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 36,
+    "question": "Comment CAF décrit la standardisation de l’environnement ?",
+    "options": ["Formation", "Automatisation", "Templates, outils, automatisation", "Contrôles de sécurité"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 37,
+    "question": "Exemple de capacité Platform :",
+    "options": ["Monitoring", "Workload & Application Management", "Change Management", "Incident Management"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+    {
+    "id": 39,
+    "question": "CAF Platform inclut la gestion de :",
+    "options": ["Architecture Cloud", "Finance", "RH", "Sécurité"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 40,
+    "question": "Plateformes multi-comptes AWS relèvent de :",
+    "options": ["Platform", "People", "Business", "Governance"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 41,
+    "question": "Quel est l’objectif de la perspective Security ?",
+    "options": ["Prévenir, détecter et répondre aux menaces", "Automatiser les tâches", "Déployer les applications", "Gérer les coûts"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 42,
+    "question": "Quelle capacité couvre IAM (Identity and Access Management) ?",
+    "options": ["Infrastructure", "Monitoring", "Access management", "Gestion des coûts"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 43,
+    "question": "Exemple de service pour la Security :",
+    "options": ["Amazon S3", "AWS CloudTrail", "AWS Lambda", "Amazon EC2"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 44,
+    "question": "Quelle perspective CAF gère les audits ?",
+    "options": ["Business", "Governance", "Platform", "Security"],
+    "correct": [3],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 45,
+    "question": "“Définir une politique de chiffrement” appartient à :",
+    "options": ["Security", "Governance", "People", "Platform"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 46,
+    "question": "Que gère la capacité “Identity and Access Management” ?",
+    "options": ["Gestion des coûts", "Déploiement d’applications", "Qui peut accéder à quoi et comment", "Surveillance des incidents"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 47,
+    "question": "Exemple de contrôle de sécurité :",
+    "options": ["VPN", "MFA pour les comptes AWS", "Automatisation", "Formation"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 49,
+    "question": "CAF Security recommande :",
+    "options": ["Une culture de sécurité dès la conception", "Automatisation", "Suivi budgétaire", "Gestion des ressources"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 50,
+    "question": "Quel élément protège la donnée client ?",
+    "options": ["Surveillance", "Automatisation", "Chiffrement, audit, segmentation", "Formation"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 51,
+    "question": "Quel est l’objectif principal de Operations ?",
+    "options": ["Assurer un fonctionnement stable et résilient", "Automatiser les déploiements", "Gérer les coûts", "Former les équipes"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 52,
+    "question": "Quelle capacité CAF s’occupe de la surveillance ?",
+    "options": ["Gestion financière", "Déploiement", "Monitoring and Event Management", "Sécurité"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 54,
+    "question": "CAF Operations inclut :",
+    "options": ["Incident Management", "Gestion financière", "Formation", "Automatisation"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 57,
+    "question": "“Runbook” fait partie de :",
+    "options": ["Business", "Security", "Operations", "Platform"],
+    "correct": [2],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 58,
+    "question": "Comment CAF assure la continuité ?",
+    "options": ["Plans de reprise d’activité", "Automatisation", "Formation", "Surveillance"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 59,
+    "question": "CAF recommande d’avoir des :",
+    "options": ["Plans de formation", "Indicateurs de performance opérationnelle", "Budgets", "Politiques"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 60,
+    "question": "Quel est le rôle du feedback dans CAF ?",
+    "options": ["Amélioration continue", "Gestion des coûts", "Surveillance", "Automatisation"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 61,
+    "question": "Une entreprise veut former ses équipes, automatiser le déploiement, et sécuriser les accès :",
+    "options": ["Business", "People, Platform, Security", "Governance", "Operations"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 62,
+    "question": "Mettre en place un suivi des coûts cloud :",
+    "options": ["Security", "Governance", "People", "Platform"],
+    "correct": [1],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 63,
+    "question": "Changer la culture interne :",
+    "options": ["People", "Platform", "Business", "Operations"],
+    "correct": [0],
+    "domain": "CAFARCH"
+  },
+  {
+    "id": 64,
+    "question": "Définir les architectures techniques pour plusieurs services :",
     "options": ["Business", "People", "Governance", "Platform"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 12,
-    "question": "Quel rôle la perspective 'People' du AWS CAF joue-t-elle dans l'adoption du cloud ?",
-    "options": [
-      "Automatiser les processus",
-      "Former et structurer les équipes",
-      "Gérer les coûts",
-      "Assurer la sécurité"
-    ],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 13,
-    "question": "Laquelle des perspectives AWS CAF est responsable de la conception de l'infrastructure technique ?",
-    "options": ["Governance", "Platform", "Security", "Operations"],
-    "correct": [1],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 14,
-    "question": "Selon AWS CAF, qui est principalement responsable de la perspective 'Governance' ?",
-    "options": ["Les équipes de développement", "Les équipes de sécurité", "Les équipes de direction", "Les architectes cloud"],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 15,
-    "question": "Laquelle des perspectives AWS CAF se concentre sur l'automatisation et l'efficacité opérationnelle ?",
-    "options": ["People", "Governance", "Platform", "Operations"],
     "correct": [3],
     "domain": "CAFARCH"
   },
   {
-    "id": 16,
-    "question": "Quel est l'objectif principal de la perspective 'Business' du AWS CAF ?",
-    "options": [
-      "Aligner les investissements cloud avec les objectifs commerciaux",
-      "Former les équipes",
-      "Gérer l'infrastructure",
-      "Assurer la sécurité des données"
-    ],
+    "id": 65,
+    "question": "Mesurer l’impact business après la migration cloud :",
+    "options": ["Business", "Operations", "Security", "People"],
     "correct": [0],
     "domain": "CAFARCH"
-  },
-  {
-    "id": 17,
-    "question": "La perspective 'Security' du AWS CAF se concentre sur :",
-    "options": [
-      "La gestion des risques",
-      "La conformité réglementaire",
-      "La protection des données et des systèmes",
-      "La formation des employés"
-    ],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 18,
-    "question": "Quel est le rôle de la perspective 'Platform' dans le AWS CAF ?",
-    "options": [
-      "Gérer les finances",
-      "Former les équipes",
-      "Concevoir l'infrastructure technique",
-      "Assurer la sécurité"
-    ],
-    "correct": [2],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 19,
-    "question": "Laquelle des perspectives AWS CAF est responsable de la gestion des opérations quotidiennes ?",
-    "options": ["Business", "People", "Governance", "Operations"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-  {
-    "id": 20,
-    "question": "Selon AWS CAF, qui est principalement responsable de la perspective 'People' ?",
-    "options": ["Les équipes de développement", "Les équipes de sécurité", "Les équipes de direction", "Les équipes RH"],
-    "correct": [3],
-    "domain": "CAFARCH"
-  },
-
-
+  }
   
 ]
